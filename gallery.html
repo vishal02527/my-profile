@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d74f12bccc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Reset some default styles for better consistency */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin: 80px auto 50px;
+      }
+
+      .gallery-item {
+        text-align: center;
+      }
+
+      .gallery-item img {
+        max-width: 80%;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: transform 0.3s;
+      }
+
+      .gallery-item img:hover {
+        transform: scale(1.1);
+      }
+
+      .caption {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      /* Style the caption as needed */
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      style="position: sticky; top: 0; z-index: 100"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./html-css-projects.html"
+                    >Html/Css projects</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://github.com/vishal02527/CPP-Projects-2023"
+                    target="_blank"
+                    >C++ projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./javascript-projects.html"
+                    >Javascript projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./reactjs-projects.html"
+                    >ReactJs projects</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gallery.html">Gallery</a>
+            </li>
+            <li class="rightNav">
+              <form class="formNav" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-warning" type="submit">Search</button>
+                <a href="./signup.html"
+                  ><button
+                    type="button"
+                    class="btn btn-success"
+                    style="margin-left: 10px"
+                  >
+                    Signup
+                  </button></a
+                >
+                <a href="./login.html"
+                  ><button
+                    type="button"
+                    class="btn btn-primary"
+                    style="margin-left: 10px"
+                  >
+                    Login
+                  </button></a
+                >
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img
+          src="https://media.istockphoto.com/id/1332279665/vector/software-development-banner-in-3d-style.jpg?s=612x612&w=0&k=20&c=EXjzAMIBxr9RJYOr8yoitVJhKDMjgbTi-__0Zmq35og="
+          alt="Image 1"
+        />
+        <div class="caption">Image 1</div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://media.istockphoto.com/id/1332279665/vector/software-development-banner-in-3d-style.jpg?s=612x612&w=0&k=20&c=EXjzAMIBxr9RJYOr8yoitVJhKDMjgbTi-__0Zmq35og="
+          alt="Image 2"
+        />
+        <div class="caption">Image 2</div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://media.istockphoto.com/id/1332279665/vector/software-development-banner-in-3d-style.jpg?s=612x612&w=0&k=20&c=EXjzAMIBxr9RJYOr8yoitVJhKDMjgbTi-__0Zmq35og="
+          alt="Image 3"
+        />
+        <div class="caption">Image 3</div>
+      </div>
+    </div>
+    <footer>
+      <div class="leftSide">
+        <a href="/">
+          <img class="footImg" src=".//images/my-avatar.png" />
+        </a>
+        <span class="creator">© 2023 Created by Vishal Kumar</span>
+      </div>
+
+      <ul>
+        <li>
+          <a href="https://github.com/vishal02527" target="_blank"
+            ><i class="fa-brands fa-github fa-2xl"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/vishal-kumar-8303a3283/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2xl"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://codepen.io/Vishal-Kumar25" target="_blank"
+            ><i class="fa-brands fa-codepen fa-2xl"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
