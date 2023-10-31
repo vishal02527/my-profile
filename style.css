@@ -1,0 +1,308 @@
+/*index.html css code*/
+.container-fluid {
+  margin-left: 45px;
+}
+.navbar-brand{
+  color: #009688;
+  font-weight: 500;
+}
+.navbar-brand:hover{
+  color: #009688;
+}
+.rightNav {
+  margin-left: 550px;
+}
+.homeRow {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.cards {
+  width: 400px;
+  height: 410px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 0;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.cards:hover {
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.15);
+  transform: scale(1.03);
+}
+.cards a {
+  text-decoration: none;
+  color: #777;
+}
+.cardImg {
+  width: 100%;
+  height: 200px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.cardTitle {
+  color: red;
+}
+.cardText {
+  font-size: 14px;
+}
+.cardDetails {
+  padding: 10px 15px;
+}
+.midCards {
+  margin-top: 20px;
+  width: 500px;
+  height: 150px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.15);
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+#secMidCard,
+#forthMidCard {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  background-color: #02305c;
+  color: #fff;
+  height: 70px;
+}
+.leftSide {
+  margin-top: -15px;
+  display: flex;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin-right: 50px;
+  box-sizing: border-box;
+  margin-top: 25px;
+}
+footer ul li {
+  margin-right: 15px;
+}
+footer ul li a i {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+.footImg {
+  margin-left: 25px;
+  width: 40px;
+  height: 40px;
+}
+.formNav {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .rightNav {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .container-fluid {
+    margin-left: 0;
+  }
+  .homeRow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards {
+    width: 90%;
+    margin: 10px 10px 0px 0px;
+  }
+  .cardImg {
+    height: auto;
+  }
+  .midCards {
+    width: 90%;
+    margin: 10px 0px 10px 15px;
+    padding: 10px;
+    height: 120px;
+  }
+  .blockquote {
+    font-size: 17px;
+  }
+  .cardTitle {
+    font-size: 18px;
+  }
+  .cardText {
+    font-size: 12px;
+  }
+  .midCards {
+    font-size: 14px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .leftSide {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  footer ul {
+    justify-content: center;
+    margin: 15px 0;
+    margin-right: 50px;
+  }
+
+  footer ul li {
+    margin: 0 10px;
+  }
+  footer ul li a i {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footImg {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/*home-info html css code*/
+#info_main {
+  margin: 40px 10%;
+}
+.para {
+  margin-top: 20px;
+  font-size: 16px;
+}
+.aloneDiv {
+  margin-bottom: 30px;
+}
+.aloneDiv h1 {
+  font-size: 28px;
+}
+.home_info3_images {
+  width: 370px;
+  height: 300px;
+  margin: 20px 0 10px 410px;
+}
+
+@media (max-width: 768px) {
+  #info_main {
+    margin: 40px 8%;
+  }
+  .para {
+    font-size: 14px;
+  }
+  .aloneDiv {
+    margin-bottom: 20px;
+  }
+  .aloneDiv h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .home_info3_images {
+    width: 280px;
+    height: 200px;
+    margin: 10px 0px 10px 20px;
+  }
+}
+
+/*Project page css code*/
+
+.proHead {
+  text-align: center;
+}
+.cardContainer {
+  padding: 10px;
+  margin: 60px 12%;
+  padding-left: 0px;
+}
+.rowCard {
+  display: flex;
+}
+.projectCards {
+  margin: 10px;
+  width: 30%;
+  height: 450px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #d6e6f4;
+  box-shadow: 0px 2px 10px #ddd;
+}
+.projectCards a {
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.projectCards span {
+  font-size: 14px;
+  font-weight: 300px;
+  color: #000;
+  font-family: sans-serif;
+}
+.cardimage {
+  width: 100%;
+  height: 210px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.cardtitle {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px 20px 0px;
+  opacity: 0.98;
+}
+.cardpara {
+  padding: 10px 20px 0px 20px;
+  margin-top: 3px;
+  opacity: 0.7;
+  line-height: 1.43;
+  font-size: 15px;
+}
+.pro-btn {
+  color: #9b9696;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #9b9696;
+  transition: linear 0.2s;
+}
+.pro-btn:hover {
+  color: #fff;
+  background-color: #9b9696;
+}
+@media (max-width: 768px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .rowCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectCards {
+    width: 120%;
+  }
+}
