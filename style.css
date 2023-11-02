@@ -207,12 +207,12 @@ footer ul li a i {
   }
   #indexButton1 {
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 12px;
   }
   #indexButton2 {
     padding: 10px 12px;
-    font-size: 14px;
-    margin-left: 10px;
+    font-size: 12px;
+    margin-left: 50px;
   }
   .biodataDiv {
     width: 92%;
@@ -249,7 +249,7 @@ footer ul li a i {
     margin-top: -8px;
   }
   #iconsDiv p {
-    font-size: 6px;
+    font-size: 7px;
     margin: 0;
     margin-bottom: 2px;
   }
