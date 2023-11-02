@@ -212,7 +212,7 @@ footer ul li a i {
   #indexButton2 {
     padding: 10px 12px;
     font-size: 14px;
-    margin-left: 115px;
+    margin-left: 100px;
   }
   .biodataDiv {
     width: 92%;
@@ -231,7 +231,9 @@ footer ul li a i {
     margin-top: 5px;
   }
   #paraIndex1 {
-    font-size: 12px;
+    font-size: 10px;
+    margin: 0;
+    margin-bottom: 10px;
   }
   #biodata h1 {
     font-size: 16px;
@@ -240,16 +242,16 @@ footer ul li a i {
   }
   #paraIndex2 {
     margin: 8px 0px;
-    font-size: 10px;
+    font-size: 8px;
   }
   #paraIndex3 {
-    font-size: 9px;
+    font-size: 7px;
   }
   #iconsDiv {
     margin-top: -8px;
   }
   #iconsDiv p {
-    font-size: 7px;
+    font-size: 6px;
     margin: 0;
     margin-bottom: 2px;
   }
