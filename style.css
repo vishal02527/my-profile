@@ -2,11 +2,11 @@
 .container-fluid {
   margin-left: 45px;
 }
-.navbar-brand{
+.navbar-brand {
   color: #009688;
   font-weight: 500;
 }
-.navbar-brand:hover{
+.navbar-brand:hover {
   color: #009688;
 }
 .rightNav {
@@ -109,6 +109,153 @@ footer ul li a i {
 }
 .formNav {
   display: flex;
+}
+
+.indexDiv {
+  width: 100%;
+  height: 500px;
+  background-image: url(https://www.adele.com/images/bg.jpg);
+  position: relative;
+  margin-bottom: 300px;
+  box-sizing: border-box;
+}
+.btnIndexDiv {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+#indexButton1 {
+  background-color: transparent;
+  border: 2px solid #f6a236;
+  color: #f6a236;
+  border-radius: 15px;
+  padding: 12px 18px;
+  transition: linear 0.3s;
+  font-family: "Poppins", sans-serif;
+}
+
+#indexButton2 {
+  background-image: linear-gradient(
+    to right,
+    #ff4b1f 0%,
+    #ff9068 51%,
+    #ff4b1f 100%
+  );
+  padding: 15px 20px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  margin-left: 850px;
+}
+
+#indexButton2:hover {
+  background-position: right center;
+}
+
+.biodataDiv {
+  width: 70%;
+  height: 530px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 1px 6px 12px #ddd;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  display: flex;
+}
+
+#myImage img {
+  width: 400px;
+  height: 480px;
+}
+#biodata {
+  margin-left: 70px;
+  margin-top: 20px;
+}
+#paraIndex2 {
+  margin: 20px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+#paraIndex3 {
+  color: #444;
+  font-family: "Raleway", sans-serif;
+}
+#iconsDiv {
+  margin-top: 30px;
+  color: #777;
+}
+
+#iconsDiv p span {
+  margin-left: 10px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .indexDiv {
+    height: 220px;
+    margin-bottom: 150px;
+  }
+  .btnIndexDiv {
+    top: 7%;
+    left: 4%;
+  }
+  #indexButton1 {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  #indexButton2 {
+    padding: 10px 12px;
+    font-size: 14px;
+    margin-left: 115px;
+  }
+  .biodataDiv {
+    width: 92%;
+    height: 230px;
+    padding: 5px;
+    top: 35%;
+    left: 4%;
+  }
+
+  #myImage img {
+    width: 160px;
+    height: 220px;
+  }
+  #biodata {
+    margin-left: 8px;
+    margin-top: 5px;
+  }
+  #paraIndex1 {
+    font-size: 12px;
+  }
+  #biodata h1 {
+    font-size: 16px;
+    margin: 0;
+    margin-top: -10px;
+  }
+  #paraIndex2 {
+    margin: 8px 0px;
+    font-size: 10px;
+  }
+  #paraIndex3 {
+    font-size: 9px;
+  }
+  #iconsDiv {
+    margin-top: -8px;
+  }
+  #iconsDiv p {
+    font-size: 7px;
+    margin: 0;
+    margin-bottom: 2px;
+  }
+  #iconsDiv p span {
+    margin-left: 10px;
+  }
 }
 
 @media (max-width: 768px) {

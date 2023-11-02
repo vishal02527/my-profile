@@ -31,9 +31,9 @@
       .gallery {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 25px;
         justify-content: center;
-        margin: 80px auto 50px;
+        margin: 80px 50px 50px;
       }
 
       .gallery-item {
@@ -41,20 +41,27 @@
       }
 
       .gallery-item img {
-        max-width: 80%;
-        height: auto;
+        width: 280px;
+        height: 380px;
         border: 1px solid #ccc;
         border-radius: 5px;
         transition: transform 0.3s;
       }
 
       .gallery-item img:hover {
-        transform: scale(1.1);
+        transform: scale(1.08);
       }
 
       .caption {
-        margin-top: 10px;
-        font-weight: bold;
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 15px;
+        font-style: italic;
+      }
+      @media (max-width: 768px) {
+        .gallery-item img {
+          width: 300px;
+        }
       }
 
       /* Style the caption as needed */
@@ -126,9 +133,7 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./gallery.html">Gallery</a>
-            </li>
+            
             <li class="rightNav">
               <form class="formNav" role="search">
                 <input
@@ -164,25 +169,44 @@
     </nav>
     <div class="gallery">
       <div class="gallery-item">
-        <img
-          src="https://media.istockphoto.com/id/1332279665/vector/software-development-banner-in-3d-style.jpg?s=612x612&w=0&k=20&c=EXjzAMIBxr9RJYOr8yoitVJhKDMjgbTi-__0Zmq35og="
-          alt="Image 1"
-        />
-        <div class="caption">Image 1</div>
+        <img src="./images/my-img1.jpg" alt="Image 1" />
+        <div class="caption">Serenity among the trees</div>
       </div>
       <div class="gallery-item">
-        <img
-          src="https://media.istockphoto.com/id/1332279665/vector/software-development-banner-in-3d-style.jpg?s=612x612&w=0&k=20&c=EXjzAMIBxr9RJYOr8yoitVJhKDMjgbTi-__0Zmq35og="
-          alt="Image 2"
-        />
-        <div class="caption">Image 2</div>
+        <img src="./images/my-img2.jpg" alt="Image 2" />
+        <div class="caption">Nature's perfect symmetry</div>
       </div>
       <div class="gallery-item">
-        <img
-          src="https://media.istockphoto.com/id/1332279665/vector/software-development-banner-in-3d-style.jpg?s=612x612&w=0&k=20&c=EXjzAMIBxr9RJYOr8yoitVJhKDMjgbTi-__0Zmq35og="
-          alt="Image 3"
-        />
-        <div class="caption">Image 3</div>
+        <img src="./images/my-img4.jpg" alt="Image 3" />
+        <div class="caption">Another year, another adventure</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/my-img6.jpg" alt="Image 3" />
+        <div class="caption">Lost in the grandeur of the Taj</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/my-img9.jpg" alt="Image 3" />
+        <div class="caption">Through the looking glass</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/my-img5.jpg" alt="Image 3" />
+        <div class="caption">Where knowledge blooms.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/my-img7.jpg" alt="Image 3" />
+        <div class="caption">Embracing elegance in my ethnic attire</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/my-img10.jpg" alt="Image 3" />
+        <div class="caption">Glimpse of Mangalayatan</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/my-img3.jpg" alt="Image 3" />
+        <div class="caption">Admiring the beauty of creativity</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./images/my-img8.jpg" alt="Image 3" />
+        <div class="caption">Celebrating style in my ethnic ensemble</div>
       </div>
     </div>
     <footer>
