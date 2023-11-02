@@ -22,6 +22,7 @@ const imagePaths = [
   "./images/krishna-img1.jpg",
   "./images/krishna-img2.jpg",
   "./images/krishna-img3.jpg",
+  "./images/krishna-img4.jpg",
 ];
 let currentImageIndex = 0;
 
