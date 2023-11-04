@@ -124,14 +124,32 @@ footer ul li a i {
   top: 10%;
   left: 10%;
 }
+
 #indexButton1 {
-  background-color: transparent;
-  border: 2px solid #f6a236;
-  color: #f6a236;
-  border-radius: 15px;
-  padding: 12px 18px;
-  transition: linear 0.3s;
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #333;
+  cursor: pointer;
+  outline: none;
   font-family: "Poppins", sans-serif;
+  padding: 12px 18px;
+  text-align: center;
+  transition: all .25s;
+}
+
+#indexButton1:hover {
+  background-color: #FFC229;
+  color: #fff;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.075);
+}
+
+#indexButton1:active {
+  transform: scale(1.025);
 }
 
 #indexButton2 {

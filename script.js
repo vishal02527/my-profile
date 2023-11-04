@@ -1,3 +1,67 @@
+//search functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const searchForm = document.querySelector(".formNav");
+  const searchInput = searchForm.querySelector("input");
+
+  searchForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const searchTerm = searchInput.value.trim().toLowerCase();
+
+    if (searchTerm) {
+      // Define an object that maps search terms to page URLs
+      const searchMappings = {
+        home: "./index.html",
+        gallery: "./gallery.html",
+        about: "./about.html",
+        resume: "./about.html",
+        contact: "./contact.html",
+        "html projects": "./html-css-projects.html",
+        "css projects": "./html-css-projects.html",
+        "html": "./html-css-projects.html",
+        "css": "./html-css-projects.html",
+        "html and css projects": "./html-css-projects.html",
+        "html css projects": "./html-css-projects.html",
+        "html-css projects": "./html-css-projects.html",
+        "html/css projects": "./html-css-projects.html",
+        certificate: "./certificate.html",
+        certificates: "./certificate.html",
+        "reactjs projects": "./reactjs-projects.html",
+        "react projects": "./reactjs-projects.html",
+        "reactjs": "./reactjs-projects.html",
+        "react": "./reactjs-projects.html",
+        painting: "./painting.html",
+        paintings: "./painting.html",
+        "javascript projects": "./javascript-projects.html",
+        "javascript": "./javascript-projects.html",
+        krishna: "./my-strength-Shree-Krishna.html",
+        "programmer vs Coder": "./home_info1.html",
+        "what does a coder do": "./home_info2.html",
+        "coders who changed the world": "./home_info3.html",
+        "the life of a programmer": "./home_info4.html",
+        signup: "./signup.html",
+        login: "./login.html",
+      };
+
+      // Check if a direct match exists
+      if (searchMappings.hasOwnProperty(searchTerm)) {
+        window.location.href = searchMappings[searchTerm];
+      } else {
+        // If no direct match is found, check for partial matches
+        for (const key in searchMappings) {
+          if (searchTerm.includes(key)) {
+            window.location.href = searchMappings[key];
+            return;
+          }
+        }
+
+        // If no matching page is found, you can display an error message or handle it in your own way
+        alert("No matching page found for your search.");
+      }
+    }
+  });
+});
+
+
 let isHindi = false;
 const button = document.getElementById("translateBtn");
 
