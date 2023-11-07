@@ -302,7 +302,7 @@ footer ul li a i {
     height: 120px;
   }
   .blockquote {
-    font-size: 17px;
+    font-size: 15px;
   }
   .cardTitle {
     font-size: 18px;
@@ -380,9 +380,9 @@ footer ul li a i {
     font-weight: 600;
   }
   .home_info3_images {
-    width: 280px;
+    width: 250px;
     height: 200px;
-    margin: 10px 0px 10px 20px;
+    margin: 10px 10px 10px 0px;
   }
 }
 
@@ -448,12 +448,12 @@ footer ul li a i {
   border-radius: 5px;
   cursor: pointer;
   border: none;
-  border: 1px solid #9b9696;
+  border: 1px solid #696969;
   transition: linear 0.2s;
 }
 .pro-btn:hover {
   color: #fff;
-  background-color: #9b9696;
+  background-color: #696969;
 }
 @media (max-width: 768px) {
   .cardContainer {
@@ -469,5 +469,8 @@ footer ul li a i {
   }
   .projectCards {
     width: 120%;
+  }
+  .cardpara{
+    font-size: 13px;
   }
 }
