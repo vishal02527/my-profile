@@ -290,6 +290,7 @@ footer ul li a i {
   }
   .cards {
     width: 90%;
+    height: 390px;
     margin: 10px 10px 0px 0px;
   }
   .cardImg {
@@ -469,6 +470,7 @@ footer ul li a i {
   }
   .projectCards {
     width: 120%;
+    height: 440px;
   }
   .cardpara{
     font-size: 13px;
