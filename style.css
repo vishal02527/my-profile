@@ -308,6 +308,10 @@ footer ul li a i {
   .cardTitle {
     font-size: 18px;
   }
+
+  .cardText {
+    font-size: 13px;
+  }
   
   .midCards {
     font-size: 14px;
