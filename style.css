@@ -152,27 +152,6 @@ footer ul li a i {
   transform: scale(1.025);
 }
 
-#indexButton2 {
-  background-image: linear-gradient(
-    to right,
-    #ff4b1f 0%,
-    #ff9068 51%,
-    #ff4b1f 100%
-  );
-  padding: 15px 20px;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  border-radius: 10px;
-  border: 0;
-  font-family: "Poppins", sans-serif;
-  margin-left: 830px;
-}
-
-#indexButton2:hover {
-  background-position: right center;
-}
-
 .biodataDiv {
   width: 70%;
   height: 530px;
@@ -226,11 +205,6 @@ footer ul li a i {
   #indexButton1 {
     padding: 8px 12px;
     font-size: 12px;
-  }
-  #indexButton2 {
-    padding: 8px 12px;
-    font-size: 12px;
-    margin-left: 65px;
   }
   .biodataDiv {
     width: 92%;
