@@ -370,7 +370,7 @@ footer ul li a i {
 }
 .cardContainer {
   padding: 10px;
-  margin: 60px 12%;
+  margin: 60px 15%;
   padding-left: 0px;
 }
 .rowCard {
@@ -445,7 +445,7 @@ footer ul li a i {
     align-items: center;
   }
   .projectCards {
-    width: 120%;
+    width: 130%;
     height: 410px;
   }
   .cardpara{
