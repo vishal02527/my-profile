@@ -42,7 +42,7 @@
   border-top-left-radius: 8px;
 }
 .cardTitle {
-  color: red;
+  color: #0083ab;
 }
 .cardText {
   font-size: 14px;
@@ -264,7 +264,7 @@ footer ul li a i {
   }
   .cards {
     width: 90%;
-    height: 380px;
+    height: 410px;
     margin: 10px 10px 0px 0px;
   }
   .cardImg {
@@ -274,7 +274,7 @@ footer ul li a i {
     width: 90%;
     margin: 10px 0px 10px 15px;
     padding: 10px;
-    height: 115px;
+    height: 120px;
   }
   .blockquote {
     font-size: 15px;
@@ -335,6 +335,8 @@ footer ul li a i {
 }
 .aloneDiv h1 {
   font-size: 28px;
+  color: #0083ab;
+
 }
 .home_info3_images {
   width: 370px;
@@ -367,10 +369,11 @@ footer ul li a i {
 
 .proHead {
   text-align: center;
+  color: #0083ab;
 }
 .cardContainer {
   padding: 10px;
-  margin: 60px 15%;
+  margin: 40px 14% 40px 17%;
   padding-left: 0px;
 }
 .rowCard {
@@ -437,12 +440,106 @@ footer ul li a i {
   color: #fff;
   background-color: #34495e;
 }
+
+.skills-section {
+  text-align: center;
+  padding: 50px;
+  margin: 50px 0px 0px;
+}
+
+.skills-section h1{
+  color: #0083ab;
+  margin-bottom: 40px;
+}
+
+.skill-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid #798c99;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 30px;
+  transition: transform 0.3s;
+  cursor: auto;
+  display: inline-block;
+  width: 300px;
+  position: relative;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-card p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #495057;
+}
+
+.skill-card .skill-icon{
+  width: 70px;
+  height: 70px;
+}
+
+.skill-card .skill-icon-trio{
+  width: 130px;
+  height: 70px;
+}
+
+.skill-card .skill-icon-alone{
+  width: 60px;
+  height: 65px;
+}
+
+.skill-card .skill-area{
+  width: 70%;
+  height: 40px;
+  background-color: #4d5c67;
+  position: absolute;
+  left: 45px;
+  border-radius: 20px;
+}
+
+.skill-area h6{
+  color: #fff;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .skill-card {
+      width: 85%;
+      padding: 10px;
+  }
+
+  .skills-section{
+    text-align: left;
+    padding: 0;
+    margin-right: 20px !important;
+  }
+
+  .skills-section h1{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .skill-card .skill-area{
+    width: 72%;
+    top: 150px;
+    left: 37px;
+  }
+
+  .skill-card p {
+    margin-bottom: 25px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .cardContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .rowCard {
     display: flex;
