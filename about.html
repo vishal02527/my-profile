@@ -10,24 +10,29 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/d74f12bccc.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
     <style>
-      .container h1{
+      .container h1 {
         color: #0083ab !important;
+        margin-bottom: 40px !important;
+      }
+      .container p{
+        font-family: 'Raleway', sans-serif;
       }
       .resFeature {
         width: 66%;
         position: relative;
-        margin: 80px auto;
+        margin: 25px auto;
       }
-      .card-header{
+      .card-header {
         background-color: #03c0ad;
       }
-      .card-body{
+      .card-body {
         background-color: aliceblue;
       }
       #mainHead1,
@@ -35,12 +40,128 @@
         font-weight: 500;
         font-size: 40px;
       }
+
+      /* Education Background Section */
+      #educationSection {
+        padding: 50px 0 100px;
+      }
+
+      #edu-heading{
+        text-align: center;
+        color: #0083ab;
+        margin-bottom: 40px;
+      }
+      .education-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .education-card {
+        width: 45%;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      #card1 {
+        background-color: rgb(254, 234, 234);
+      }
+      #card2 {
+        background-color: hsl(0, 0%, 90%);
+      }
+      #card3 {
+        background-color: rgb(252, 252, 207);
+      }
+      #card4 {
+        background-color: rgb(227, 252, 227);
+      }
+
+      .education-card:hover {
+        transform: scale(1.05);
+      }
+
+      .education-content {
+        text-align: center;
+      }
+
+      .edu-image-div {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        margin: 10px auto 20px;
+      }
+      #edu-image1{
+        background-color: rgb(253, 219, 219);
+      }
+      #edu-image2{
+        background-color: hsl(0, 4%, 86%);
+      }
+      #edu-image3{
+        background-color: rgb(248, 248, 179);
+      }
+      #edu-image4{
+        background-color: rgb(207, 251, 207);
+      }
+      .edu-image-div img{
+        margin-top: 17px;
+      }
+
+      .education-content h1 {
+        color: hsl(0, 0%, 9%);
+        font-size: 28px;
+        font-weight: normal;
+        margin-bottom: 20px;
+      }
+
+      .education-content p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #444;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .edu-college-div{
+        padding: 5px;
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        margin: 0 auto;
+        font-weight: bold;
+      }
+
+      #edu-college1{
+        width: 75%;
+        background-color: rgb(253, 219, 219);
+        color: rgb(244, 130, 130);
+      }
+
+      #edu-college2{
+        width: 70%;
+        background-color: hsl(0, 4%, 86%);
+        color: hsl(0, 0%, 48%);
+      }
+
+      #edu-college3{
+        width: 80%;
+        background-color: rgb(248, 248, 179);
+        color: rgb(227, 227, 74);
+      }
+
+      #edu-college4{
+        width: 99%;
+        background-color: rgb(207, 251, 207);
+        color: rgb(132, 237, 132);
+      }
+
       @media (max-width: 768px) {
         .resFeature {
           width: 93%;
           margin: 30px auto;
         }
-        #feat1{
+        #feat1 {
           margin-top: -50px;
         }
         .container h1 {
@@ -57,6 +178,18 @@
         #mainPara2 {
           font-size: 16px;
         }
+        #educationSection {
+          padding: 0;
+          margin-bottom: 100px;
+        }
+        .education-card {
+          width: 90%; /* Make cards full width on small screens */
+        }
+
+        .education-container {
+          flex-direction: column;
+          margin-left: 10px;
+        }
         .resFeature .card-title {
           font-size: 16px;
           font-weight: 600;
@@ -69,110 +202,109 @@
   </head>
   <body>
     <nav
-        class="navbar navbar-expand-lg bg-body-tertiary"
-        style="position: sticky; top: 0; z-index: 100"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Projects
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="./html-css-projects.html"
-                      >Html/Css projects</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="https://github.com/vishal02527/CPP-Projects-2023"
-                      target="_blank"
-                      >C++ projects</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./javascript-projects.html"
-                      >Javascript projects</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./reactjs-projects.html">ReactJs projects</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="./nodejs-projects.html"
-                      >NodeJs projects</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              
-              <li class="rightNav">
-                <form class="formNav" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search all content"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-warning" type="submit">Search</button>
-                  <a href="./signup.html"
-                    ><button
-                      type="button"
-                      class="btn btn-success"
-                      style="margin-left: 10px"
-                    >
-                      Signup
-                    </button></a
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      style="position: sticky; top: 0; z-index: 100"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./html-css-projects.html"
+                    >Html/Css projects</a
                   >
-                  <a href="./login.html"
-                    ><button
-                      type="button"
-                      class="btn btn-primary"
-                      style="margin-left: 10px"
-                    >
-                      Login
-                    </button></a
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://github.com/vishal02527/CPP-Projects-2023"
+                    target="_blank"
+                    >C++ projects</a
                   >
-                </form>
-              </li>
-            </ul>
-          </div>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./javascript-projects.html"
+                    >Javascript projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./reactjs-projects.html"
+                    >ReactJs projects</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./nodejs-projects.html"
+                    >NodeJs projects</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="rightNav">
+              <form class="formNav" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search all content"
+                  aria-label="Search"
+                />
+                <button class="btn btn-warning" type="submit">Search</button>
+                <a href="./signup.html"
+                  ><button
+                    type="button"
+                    class="btn btn-success"
+                    style="margin-left: 10px"
+                  >
+                    Signup
+                  </button></a
+                >
+                <a href="./login.html"
+                  ><button
+                    type="button"
+                    class="btn btn-primary"
+                    style="margin-left: 10px"
+                  >
+                    Login
+                  </button></a
+                >
+              </form>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
     <main>
       <div class="container">
         <div class="px-4 pt-5 my-2 text-center">
@@ -195,7 +327,9 @@
           </div>
           <div class="col-lg-6 mx-auto" style="margin-top: 80px">
             <p class="lead mb-4">
-              Received a prestigious and motivating champion's shield for securing the top spot in the Intermediate program with a focus on the science stream at S.M.B. Inter College in 2019.
+              Received a prestigious and motivating champion's shield for
+              securing the top spot in the Intermediate program with a focus on
+              the science stream at S.M.B. Inter College in 2019.
             </p>
           </div>
           <div class="text-center" style="margin-top: 40px">
@@ -261,12 +395,75 @@
           </div>
         </div>
       </div>
+      <!-- Education Section -->
+      <section id="educationSection">
+        <h1 id="edu-heading">Educational Background</h1>
+        <div class="education-container">
+          <div class="education-card" id="card1">
+            <div class="education-content">
+              <div class="edu-image-div" id="edu-image1">
+                <img src="https://www.codealpha.tech/img/category-3.svg" alt="education-image" />
+              </div>
+              <h1>Post-metric</h1>
+              <p>
+                My post-metric education in the science stream during my 12th class was a pivotal period that shaped my academic trajectory. Focused on Engaging in theoretical concepts and practical experiments.
+              </p>
+              <div class="edu-college-div" id="edu-college1">
+                S.M.B Inter College, Aligarh
+              </div>
+            </div>
+          </div>
+          <div class="education-card" id="card2">
+            <div class="education-content">
+              <div class="edu-image-div" id="edu-image2">
+                <img src="https://www.codealpha.tech/img/category-3.svg" alt="education-image" />
+              </div>
+              <h1>Graduation</h1>
+              <p>
+                Throughout my graduation with BSc studies, I engaged deeply with complex mathematical concepts, delved into the intricacies of physical phenomena, and explored the principles that underpin chemical reactions.
+              </p>
+              <div class="edu-college-div" id="edu-college2">
+                D.B.R.A.U. University, Agra
+              </div>
+            </div>
+          </div>
+          <div class="education-card" id="card3">
+            <div class="education-content">
+              <div class="edu-image-div" id="edu-image3">
+                <img src="https://www.codealpha.tech/img/category-3.svg" alt="education-image" />
+              </div>
+              <h1>Post-graduation</h1>
+              <p>
+                For my post-graduation, I pursued a Master's degree in Computer Science. Actively engaging in coding challenges, collaborative projects, and research endeavors, I expanded my expertise and contributed to the ongoing advancements in the field.
+              </p>
+              <div class="edu-college-div" id="edu-college3">
+                R.M.P.S.S.U. University, Aligarh
+              </div>
+            </div>
+          </div>
+          <div class="education-card" id="card4">
+            <div class="education-content">
+              <div class="edu-image-div" id="edu-image4">
+                <img src="https://www.codealpha.tech/img/category-3.svg" alt="education-image" />
+              </div>
+              <h1>Full stack (MERN)</h1>
+              <p>
+                During my post graduation, I decided for learning Full Stack development, specializing in the MERN (MongoDB, Express.js, React.js, Node.js). This immersive program equipped me with the skills to seamlessly navigate both frontend and backend development.
+              </p>
+              <div class="edu-college-div" id="edu-college4">
+                Edyoda Digital University, Bangalore
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div class="card text-center resFeature" id="feat1">
         <h5 class="card-header">Featured</h5>
         <div class="card-body">
           <h5 class="card-title">My Resume</h5>
           <p class="card-text">
-            A meticulously tailored resume that excels in both its formatting and visual appeal
+            A meticulously tailored resume that excels in both its formatting
+            and visual appeal
           </p>
           <a
             href="https://drive.google.com/file/d/1IrBp_XSviIOQIB2tmf87OW4jTvwDaplb/view?usp=sharing"
@@ -281,7 +478,8 @@
         <div class="card-body">
           <h5 class="card-title">My paintings</h5>
           <p class="card-text">
-            Embark on an authentic journey into the world of nature and creativity.
+            Embark on an authentic journey into the world of nature and
+            creativity.
           </p>
           <a href="./painting.html" class="btn btn-danger">View paintings</a>
         </div>
@@ -291,7 +489,8 @@
         <div class="card-body">
           <h5 class="card-title">My certificates</h5>
           <p class="card-text">
-            Achieved both technical and non-technical certifications, showcasing a commitment to continuous growth and expertise.
+            Achieved both technical and non-technical certifications, showcasing
+            a commitment to continuous growth and expertise.
           </p>
           <a href="./certificate.html" class="btn btn-danger"
             >View certificates</a
