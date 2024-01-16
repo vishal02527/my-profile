@@ -44,10 +44,11 @@
 .cardTitle {
   color: #0083ab;
   margin-bottom: 10px;
+  font-family: sans-serif;
 }
 .cardText {
   font-size: 14px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .cardDetails {
   padding: 10px 15px;
@@ -61,7 +62,7 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.15);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .column {
   display: flex;
@@ -130,10 +131,10 @@ footer ul li a i {
 
 #indexButton1 {
   appearance: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 40em;
   border-style: none;
-  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-shadow: #adcfff 0 -12px 6px inset;
   box-sizing: border-box;
   color: #333;
   cursor: pointer;
@@ -141,13 +142,13 @@ footer ul li a i {
   font-family: "Poppins", sans-serif;
   padding: 12px 18px;
   text-align: center;
-  transition: all .25s;
+  transition: all 0.25s;
 }
 
 #indexButton1:hover {
-  background-color: #FFC229;
+  background-color: #ffc229;
   color: #fff;
-  box-shadow: #FF6314 0 -6px 8px inset;
+  box-shadow: #ff6314 0 -6px 8px inset;
   transform: scale(1.075);
 }
 
@@ -289,7 +290,7 @@ footer ul li a i {
   .cardText {
     font-size: 13px;
   }
-  
+
   .midCards {
     font-size: 14px;
   }
@@ -332,7 +333,7 @@ footer ul li a i {
 .para {
   margin-top: 20px;
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .aloneDiv {
   margin-bottom: 30px;
@@ -340,7 +341,6 @@ footer ul li a i {
 .aloneDiv h1 {
   font-size: 28px;
   color: #0083ab;
-
 }
 .home_info3_images {
   width: 370px;
@@ -416,8 +416,8 @@ footer ul li a i {
   padding: 20px 20px 0px;
   opacity: 0.98;
 }
-.name{
-  color: #0096ff !important; 
+.name {
+  color: #0096ff !important;
   margin-left: 20px;
 }
 .cardpara {
@@ -426,7 +426,7 @@ footer ul li a i {
   opacity: 0.7;
   line-height: 1.43;
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .pro-btn {
   color: #34495e;
@@ -452,7 +452,7 @@ footer ul li a i {
   margin: 50px 0px 0px;
 }
 
-.skills-section h1{
+.skills-section h1 {
   color: #0083ab;
   margin-bottom: 40px;
 }
@@ -472,32 +472,28 @@ footer ul li a i {
   position: relative;
 }
 
-.skill-card:hover {
-  transform: scale(1.05);
-}
-
 .skill-card p {
   margin-top: 10px;
   margin-bottom: 20px;
   color: #495057;
 }
 
-.skill-card .skill-icon{
+.skill-card .skill-icon {
   width: 70px;
   height: 70px;
 }
 
-.skill-card .skill-icon-trio{
+.skill-card .skill-icon-trio {
   width: 130px;
   height: 70px;
 }
 
-.skill-card .skill-icon-alone{
+.skill-card .skill-icon-alone {
   width: 60px;
   height: 65px;
 }
 
-.skill-card .skill-area{
+.skill-card .skill-area {
   width: 70%;
   height: 40px;
   background-color: #058d7f;
@@ -506,29 +502,95 @@ footer ul li a i {
   border-radius: 20px;
 }
 
-.skill-area h6{
+.skill-area h6 {
   color: #fff;
   margin-top: 10px;
 }
 
+#life-interest-section {
+  margin: 70px 0 10px 15%;
+}
+
+#life-interest-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 80%;
+  margin-top: 20px;
+}
+
+#life-interest-div {
+  display: flex;
+  margin-left: 32%;
+}
+
+#life,
+#interest {
+  padding: 15px 20px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #cec2fe;
+  color: #7a5ded;
+}
+
+#life.active,
+#interest.active {
+  background-color: #8d72f9;
+  color: #fff;
+}
+
+#gallery {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.life-interest-image-container {
+  flex: 1 0 23%;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.life-interest-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.life-interest-image-container img:hover {
+  transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
   .skill-card {
-      width: 85%;
-      padding: 10px;
+    width: 85%;
+    padding: 10px;
   }
 
-  .skills-section{
+  .skills-section {
     text-align: left;
     padding: 0;
     margin-right: 20px !important;
   }
 
-  .skills-section h1{
+  .skills-section h1 {
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .skill-card .skill-area{
+  .skill-card .skill-area {
     width: 72%;
     top: 150px;
     left: 37px;
@@ -536,6 +598,39 @@ footer ul li a i {
 
   .skill-card p {
     margin-bottom: 25px !important;
+  }
+
+  #life-interest-section {
+    margin: 70px 0 10px 0%;
+  }
+
+  #life-interest-container {
+    width: 90%;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+
+  #life-interest-div {
+    margin-left: 15%;
+  }
+
+  #life,
+  #interest {
+    padding: 12px 18px;
+    margin: 8px;
+    font-size: 16px;
+  }
+
+  #gallery {
+    padding: 8px;
+  }
+
+  .life-interest-image-container {
+    margin: 3px;
+  }
+
+  .life-interest-image-container img {
+    height: 70px;
   }
 }
 
@@ -555,20 +650,20 @@ footer ul li a i {
     width: 130%;
     height: 410px;
   }
-  .name{
+  .name {
     margin-left: 15px;
   }
-  .cardpara{
+  .cardpara {
     font-size: 13px;
     padding-left: 15px;
   }
-  .cardtitle{
+  .cardtitle {
     padding: 10px 15px 0px;
   }
-  .cardimage{
+  .cardimage {
     height: 190px;
   }
-  .pro-btn{
+  .pro-btn {
     margin-left: 0;
   }
 }

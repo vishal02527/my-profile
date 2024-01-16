@@ -11,14 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
       // Define an object that maps search terms to page URLs
       const searchMappings = {
         home: "./index.html",
+        skill: "./index.html",
+        skills: "./index.html",
         gallery: "./gallery.html",
         about: "./about.html",
         resume: "./about.html",
         contact: "./contact.html",
         "html projects": "./html-css-projects.html",
         "css projects": "./html-css-projects.html",
-        "html": "./html-css-projects.html",
-        "css": "./html-css-projects.html",
+        html: "./html-css-projects.html",
+        css: "./html-css-projects.html",
         "html and css projects": "./html-css-projects.html",
         "html css projects": "./html-css-projects.html",
         "html-css projects": "./html-css-projects.html",
@@ -27,14 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
         certificates: "./certificate.html",
         "reactjs projects": "./reactjs-projects.html",
         "react projects": "./reactjs-projects.html",
-        "reactjs": "./reactjs-projects.html",
-        "react": "./reactjs-projects.html",
+        reactjs: "./reactjs-projects.html",
+        react: "./reactjs-projects.html",
         "nodejs projects": "./nodejs-projects.html",
-        "nodejs": "./nodejs-projects.html",
+        nodejs: "./nodejs-projects.html",
         painting: "./painting.html",
         paintings: "./painting.html",
         "javascript projects": "./javascript-projects.html",
-        "javascript": "./javascript-projects.html",
+        javascript: "./javascript-projects.html",
         "programmer vs Coder": "./home_info1.html",
         "what does a coder do": "./home_info2.html",
         "coders who changed the world": "./home_info3.html",
@@ -43,18 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
         login: "./login.html",
         "edyoda survey form": "./html-css-projects.html",
         "survey form": "./html-css-projects.html",
-        "nuuk": "./html-css-projects.html",
+        nuuk: "./html-css-projects.html",
         "nuuk static website": "./html-css-projects.html",
         "stunning landing page": "./html-css-projects.html",
         "shree krishna padawali": "./html-css-projects.html",
         "krishna padawali": "./html-css-projects.html",
-        "padawali": "./html-css-projects.html",
+        padawali: "./html-css-projects.html",
         "edyoda stories": "./html-css-projects.html",
         "beautiful landing page": "./html-css-projects.html",
         "hospital patient records": "./javascript-projects.html",
         "marksheet generator": "./javascript-projects.html",
         "ipl team": "./javascript-projects.html",
-        "javascript": "./javascript-projects.html",
+        javascript: "./javascript-projects.html",
         "student teacher records": "./javascript-projects.html",
         "set your journey": "./javascript-projects.html",
         "quiz app": "./javascript-projects.html",
@@ -72,8 +74,12 @@ document.addEventListener("DOMContentLoaded", function () {
         "kafene web app": "./reactjs-projects.html",
         "player app": "./nodejs-projects.html",
         "chat room": "./nodejs-projects.html",
-        "chatroom": "./nodejs-projects.html",
+        chatroom: "./nodejs-projects.html",
         "chat web app": "./nodejs-projects.html",
+        "project videos": "./project-videos.html",
+        "project video": "./project-videos.html",
+        videos: "./project-videos.html",
+        video: "./project-videos.html",
       };
 
       // Check if a direct match exists
@@ -95,48 +101,48 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+function showImages(category) {
+  const gallery = document.getElementById("gallery");
+  gallery.innerHTML = "";
 
-let isHindi = false;
-const button = document.getElementById("translateBtn");
+  const images =
+    category === "life"
+      ? [
+          "https://media.istockphoto.com/id/1202312179/photo/hands-cup-holding-a-clock-and-high-noon-concept-time-to-global-changes-elements-of-this-image.jpg?s=612x612&w=0&k=20&c=i4AIWe3ej5X4YyHNHKa-GJ8ld-GhoUb96lfhodCn4xE=",
+          "https://media.istockphoto.com/id/1473578427/photo/man-practicing-football-on-grass.jpg?s=612x612&w=0&k=20&c=7exLYAktSw_0teSSZ0EA05-nrMqeqBLIZnQ2Snt_lEM=",
+          "https://media.istockphoto.com/id/1134255601/photo/handsome-hispanic-man-wearing-casual-t-shirt-at-home-smiling-in-love-showing-heart-symbol-and.jpg?s=612x612&w=0&k=20&c=nFtss1CgiyzGKH9OE2aXztg-4BigMMzF-8sDpjw-6Wg=",
+          "https://media.istockphoto.com/id/540861476/photo/total-relaxation.jpg?s=612x612&w=0&k=20&c=LtGAz30Yt8xBfW3J8gAmCTaHL88yaV660nuK17SoXbc=",
+          "https://media.istockphoto.com/id/698788086/photo/indian-young-couple-celebrating-diwali.jpg?s=612x612&w=0&k=20&c=b0mj2nQfiqvm4uXIYjfciZ9FbAq6PrVKOPiiOVNFuUw=",
+        ]
+      : [
+          "https://media.istockphoto.com/id/1321486723/photo/japanese-man-spending-weekend-morning-painting-in-his-bedroom-at-home.jpg?s=612x612&w=0&k=20&c=vQNWXbNJ6xteAa33XmgBY4Uow0blGgCSl8gvRxuxSi4=",
+          "https://media.istockphoto.com/id/1342191952/photo/young-boy-preparing-for-exam-studying-at-home.jpg?s=612x612&w=0&k=20&c=WIDgjJgjP6xeziY6Pocoauu1a_pM3vQ8CSV_qr9FUYs=",
+          "https://media.istockphoto.com/id/1390285717/photo/asian-programmer-writing-code-on-a-laptop.jpg?s=612x612&w=0&k=20&c=mRD30S9Dlqws614cEzJ1Hieipf_O8HXv9Cppw1eXdjs=",
+          "https://media.istockphoto.com/id/172438443/photo/vintage-poetry-and-eyeglasses.jpg?s=612x612&w=0&k=20&c=FwbQPAL0MT33J5AGifmrsGG1V66KIT7j4SYrJWzTDRA=",
+          "https://media.istockphoto.com/id/1369836486/photo/adult-bearded-man-indoors-in-cafe-lifestyle-concept-photo-with-copy-space-picture-of-guy-who.jpg?s=612x612&w=0&k=20&c=KgtDm2-TI5tEM1xc0DD67RIUtsYBbC8AiriaGip1FX8=",
+        ];
 
-function toggleLanguage() {
-  const contentEnglish = document.getElementById("content-english");
-  const contentHindi = document.getElementById("content-hindi");
+  images.forEach((image) => {
+    const imageContainer = document.createElement("div");
+    imageContainer.className = "life-interest-image-container";
 
-  if (contentEnglish.style.display === "block") {
-    contentEnglish.style.display = "none";
-    contentHindi.style.display = "block";
-    button.textContent = "Read in English";
-  } else {
-    contentEnglish.style.display = "block";
-    contentHindi.style.display = "none";
-    button.textContent = "हिंदी में पढ़ें";
-  }
-  isHindi = !isHindi;
+    const imgElement = document.createElement("img");
+    imgElement.src = image;
+    imgElement.alt = image;
+
+    imageContainer.appendChild(imgElement);
+    gallery.appendChild(imageContainer);
+  });
+
+  // Remove active class from all boxes
+  document.getElementById("life").classList.remove("active");
+  document.getElementById("interest").classList.remove("active");
+
+  // Add active class to the clicked box
+  document.getElementById(category).classList.add("active");
 }
 
-const krishnaImage = document.getElementById("krishnaImage");
-const imagePaths = [
-  "./images/krishna-img1.jpg",
-  "./images/krishna-img2.jpg",
-  "./images/krishna-img3.jpg",
-  "./images/krishna-img4.jpg",
-];
-let currentImageIndex = 0;
-
-// Function to fade out the current image and change to the next image
-function fadeOutAndChangeImage() {
-  krishnaImage.classList.add("fade");
-  setTimeout(() => {
-    currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
-    krishnaImage.src = imagePaths[currentImageIndex];
-    krishnaImage.classList.remove("fade");
-  }, 2000);
-}
-
-// Preload and start the fading effect after the first image is loaded
-krishnaImage.onload = () => {
-  setTimeout(() => {
-    fadeOutAndChangeImage();
-  }, 5000); // Add a delay to allow the first image to display
-};
+// Show 'Life' images by default when the page loads
+document.addEventListener("DOMContentLoaded", function () {
+  showImages("life");
+});

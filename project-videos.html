@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Videos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/d74f12bccc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?&family=Poppins&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body{
+        background-color: #d8eafb;
+      }
+      section h1 {
+        text-align: center;
+        color: #0083ab;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .videos-div {
+        padding: 10px;
+        margin-left: 16%;
+      }
+
+      .video-card {
+        width: calc(26% - 40px);
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 20px;
+        overflow: hidden;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease-in-out;
+        opacity: 0.5;
+      }
+
+      .video-card:hover {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+
+      .video-card video {
+        width: 100%;
+        height: 180px;
+        display: block;
+      }
+
+      .video-info {
+        padding: 20px;
+      }
+
+      .video-info h2 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        color: #000;
+      }
+
+      .video-info p {
+        margin: 0;
+        font-size: 14px;
+        color: #333;
+        font-family: "Poppins", "sans-serif";
+      }
+
+      @media (max-width: 768px) {
+        .videos-div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+        }
+        .rowCard {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .video-card {
+          width: 90%;
+          margin: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="homeMain">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="position: sticky; top: 0; z-index: 100"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./html-css-projects.html"
+                      >Html/Css projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://github.com/vishal02527/CPP-Projects-2023"
+                      target="_blank"
+                      >C++ projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./javascript-projects.html"
+                      >Javascript projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./reactjs-projects.html"
+                      >ReactJs projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./nodejs-projects.html"
+                      >NodeJs projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./project-videos.html"
+                      >Project Videos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="rightNav">
+                <form class="formNav" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search all content"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-warning" type="submit">Search</button>
+                  <a href="./signup.html"
+                    ><button
+                      type="button"
+                      class="btn btn-success"
+                      style="margin-left: 10px"
+                    >
+                      Signup
+                    </button></a
+                  >
+                  <a href="./login.html"
+                    ><button
+                      type="button"
+                      class="btn btn-primary"
+                      style="margin-left: 10px"
+                    >
+                      Login
+                    </button></a
+                  >
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <h1>My Project videos</h1>
+        <div class="videos-div">
+          <!-- First Row -->
+          <div class="rowCard">
+            <div class="video-card">
+              <div class="video-container">
+                <video controls>
+                  <source src="" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="video-info">
+                <h2>Project Title 1</h2>
+                <p>
+                  Introducing 'Nuuk' a meticulously crafted static website,
+                  seamlessly blending responsive design with the elegance of
+                  HTML and CSS code.
+                </p>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-container">
+                <video controls>
+                  <source src="" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="video-info">
+                <h2>Project Title 2</h2>
+                <p>
+                  In this project, details of IPL team are stored, we can add
+                  any specific team and team player and also view details of
+                  specific team and team player.
+                </p>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-container">
+                <video controls>
+                  <source src="" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="video-info">
+                <h2>Project Title 3</h2>
+                <p>
+                  This is an interesting responsive quiz web app with stylish
+                  design. A timer is also added in the quiz. You have to enter
+                  your name before playing quiz.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="videos-div">
+          <!-- Second Row -->
+          <div class="rowCard">
+            <div class="video-card">
+              <div class="video-container">
+                <video controls>
+                  <source src="" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="video-info">
+                <h2>Project Title 4</h2>
+                <p>
+                  This is a shopping website, user can add his/her favourite
+                  item into cart and by clicking on the cart he/she can place
+                  the order.
+                </p>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-container">
+                <video controls>
+                  <source src="" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="video-info">
+                <h2>Project Title 5</h2>
+                <p>
+                  This is best project that I've ever made in react. It's
+                  responsive and is for university purposes. Many attractive
+                  functionalities are used in this project.
+                </p>
+              </div>
+            </div>
+            <div class="video-card">
+              <div class="video-container">
+                <video controls>
+                  <source src="" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="video-info">
+                <h2>Project Title 6</h2>
+                <p>
+                  This is a store which contains the data of products. Checkbox
+                  filter functionality is implemented to filter the products on
+                  the basis of some specific criteria.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="leftSide">
+          <a href="/">
+            <img class="footImg" src=".//images/my-avatar.png" />
+          </a>
+          <span class="creator">© 2023 Created by Vishal Kumar</span>
+        </div>
+
+        <ul>
+          <li>
+            <a href="https://github.com/vishal02527" target="_blank"
+              ><i class="fa-brands fa-github fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/vishal-kumar-8303a3283/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://codepen.io/Vishal-Kumar25" target="_blank"
+              ><i class="fa-brands fa-codepen fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
