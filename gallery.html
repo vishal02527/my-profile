@@ -17,7 +17,6 @@
     ></script>
     <link rel="stylesheet" href="./style.css" />
     <style>
-      /* Reset some default styles for better consistency */
       * {
         margin: 0;
         padding: 0;
@@ -27,13 +26,18 @@
       body {
         font-family: Arial, sans-serif;
       }
+      main h1 {
+        color: #0083ab;
+        text-align: center;
+        margin: 50px 0;
+      }
 
       .gallery {
         display: flex;
         flex-wrap: wrap;
         gap: 25px;
         justify-content: center;
-        margin: 80px 50px 50px;
+        margin: 20px 50px 50px;
       }
 
       .gallery-item {
@@ -57,6 +61,7 @@
         font-weight: 500;
         font-size: 15px;
         font-style: italic;
+        color: rgb(240, 54, 54);
       }
       @media (max-width: 768px) {
         .gallery-item img {
@@ -64,8 +69,6 @@
           height: 360px;
         }
       }
-
-      /* Style the caption as needed */
     </style>
   </head>
   <body>
@@ -178,54 +181,57 @@
         </div>
       </div>
     </nav>
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="./images/my-img1.jpg" alt="Image 1" />
-        <div class="caption">Serenity among the trees</div>
+    <main>
+      <h1>Gallery</h1>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./images/my-img1.jpg" alt="Image 1" />
+          <div class="caption">Serenity among the trees</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/my-img2.jpg" alt="Image 2" />
+          <div class="caption">Nature's perfect symmetry</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/my-img4.jpg" alt="Image 3" />
+          <div class="caption">Another year, another adventure</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/my-img6.jpg" alt="Image 3" />
+          <div class="caption">Lost in the grandeur of the Taj</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/my-img9.jpg" alt="Image 3" />
+          <div class="caption">Through the looking glass</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/my-img5.jpg" alt="Image 3" />
+          <div class="caption">Where knowledge blooms.</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/my-img7.jpg" alt="Image 3" />
+          <div class="caption">Embracing elegance in my ethnic attire</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/my-img10.jpg" alt="Image 3" />
+          <div class="caption">Glimpse of Mangalayatan</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/my-img3.jpg" alt="Image 3" />
+          <div class="caption">Admiring the beauty of creativity</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./images/my-img8.jpg" alt="Image 3" />
+          <div class="caption">Celebrating style in my ethnic ensemble</div>
+        </div>
       </div>
-      <div class="gallery-item">
-        <img src="./images/my-img2.jpg" alt="Image 2" />
-        <div class="caption">Nature's perfect symmetry</div>
-      </div>
-      <div class="gallery-item">
-        <img src="./images/my-img4.jpg" alt="Image 3" />
-        <div class="caption">Another year, another adventure</div>
-      </div>
-      <div class="gallery-item">
-        <img src="./images/my-img6.jpg" alt="Image 3" />
-        <div class="caption">Lost in the grandeur of the Taj</div>
-      </div>
-      <div class="gallery-item">
-        <img src="./images/my-img9.jpg" alt="Image 3" />
-        <div class="caption">Through the looking glass</div>
-      </div>
-      <div class="gallery-item">
-        <img src="./images/my-img5.jpg" alt="Image 3" />
-        <div class="caption">Where knowledge blooms.</div>
-      </div>
-      <div class="gallery-item">
-        <img src="./images/my-img7.jpg" alt="Image 3" />
-        <div class="caption">Embracing elegance in my ethnic attire</div>
-      </div>
-      <div class="gallery-item">
-        <img src="./images/my-img10.jpg" alt="Image 3" />
-        <div class="caption">Glimpse of Mangalayatan</div>
-      </div>
-      <div class="gallery-item">
-        <img src="./images/my-img3.jpg" alt="Image 3" />
-        <div class="caption">Admiring the beauty of creativity</div>
-      </div>
-      <div class="gallery-item">
-        <img src="./images/my-img8.jpg" alt="Image 3" />
-        <div class="caption">Celebrating style in my ethnic ensemble</div>
-      </div>
-    </div>
+    </main>
     <footer>
       <div class="leftSide">
         <a href="/">
           <img class="footImg" src=".//images/my-avatar.png" />
         </a>
-        <span class="creator">© 2023 Created by Vishal Kumar</span>
+        <span class="creator">All rights reserved ©2024, Vishal Kumar</span>
       </div>
 
       <ul>

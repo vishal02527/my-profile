@@ -172,6 +172,7 @@ footer ul li a i {
 #myImage img {
   width: 400px;
   height: 480px;
+  border: 3px solid rgb(76, 249, 76);
 }
 #biodata {
   margin-left: 70px;
@@ -221,6 +222,7 @@ footer ul li a i {
   #myImage img {
     width: 160px;
     height: 220px;
+    border: 2px solid rgb(76, 249, 76);
   }
   #biodata {
     margin-left: 8px;
@@ -304,6 +306,9 @@ footer ul li a i {
     margin-top: 10px;
     margin-right: 10px;
   }
+  .leftSide .creator {
+    font-size: 13px;
+  }
 
   footer ul {
     justify-content: center;
@@ -315,8 +320,11 @@ footer ul li a i {
     margin: 0 10px;
   }
   footer ul li a i {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 10px;
+  }
+  footer ul li a i:hover {
+    color: #0db3a3;
   }
 
   .footImg {
@@ -623,14 +631,16 @@ footer ul li a i {
 
   #gallery {
     padding: 8px;
+    flex-direction: column;
   }
 
   .life-interest-image-container {
-    margin: 3px;
+    margin: 5px;
   }
 
   .life-interest-image-container img {
-    height: 100px;
+    height: 130px;
+    width: 260px;
   }
 }
 
