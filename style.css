@@ -537,7 +537,7 @@ footer ul li a i {
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
-  background-color: #cec2fe;
+  background-color: #d2c9f8;
   color: #7a5ded;
 }
 
@@ -630,7 +630,7 @@ footer ul li a i {
   }
 
   .life-interest-image-container img {
-    height: 70px;
+    height: 100px;
   }
 }
 
