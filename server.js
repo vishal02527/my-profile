@@ -28,11 +28,11 @@ const Contact = mongoose.model("Contact", contactSchema);
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-    res.sendFile("/index.html", { root: __dirname });
+    res.sendFile("https://vishal-creator-profile.netlify.app", { root: __dirname });
   });
   
-  app.get("/contact", (req, res) => {
-    res.sendFile("/contact.html", { root: __dirname });
+  app.get("https://vishal-creator-profile.netlify.app/contact", (req, res) => {
+    res.sendFile("https://vishal-creator-profile.netlify.app/contact", { root: __dirname });
   });
   
 
@@ -54,7 +54,7 @@ app.post("https://vishal-creator-profile.netlify.app/contact", (req, res) => {
     .then(() => {
       console.log("Form data saved successfully.");
       // Redirect to the thank-you.html page
-      res.redirect('/thank-you.html');
+      res.redirect('https://vishal-creator-profile.netlify.app/thank-you.html');
     })
     .catch((err) => {
       console.error("Error saving to database:", err);
