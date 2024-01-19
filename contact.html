@@ -152,14 +152,15 @@
         </div>
       </div>
     </nav>
-    <form class="formContact">
+    <form class="formContact" action="/contact" method="post">
       <div class="mb-3">
-        <h2 class="h3 mb-3 fw-normal text-center">Contact us</h2>
+        <h2 class="h3 mb-3 fw-normal text-center">Get in touch</h2>
         <label for="exampleInputFullName1" class="form-label">Full name</label>
         <input
           type="text"
           class="form-control"
           id="exampleInputFullName1"
+          name="fullName"
           required
         />
       </div>
@@ -169,6 +170,7 @@
           type="email"
           class="form-control"
           id="exampleInputEmail1"
+          name="email"
           aria-describedby="emailHelp"
           required
         />
@@ -176,18 +178,21 @@
           We'll never share your email with anyone else.
         </div>
       </div>
-      <select class="form-select" aria-label="Default select example" required>
+      <select class="form-select" aria-label="Default select example" name="profession" required>
         <option disabled selected>Select your profession</option>
         <option>Web developer</option>
         <option>Data scientist</option>
+        <option>Software developer</option>
         <option>Database administrator</option>
+        <option>Student</option>
+        <option>Professor</option>
         <option>Java developer</option>
         <option>Python developer</option>
         <option>Other</option>
       </select>
       <div>
         <label style="margin-top: 20px">What can we help you with?</label>
-        <textarea style="margin-top: 5px; width: 100%" required></textarea>
+        <textarea name="message" style="margin-top: 5px; width: 100%" required></textarea>
       </div>
 
       <div class="mb-3 form-check" style="margin-top: 20px">
