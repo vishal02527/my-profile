@@ -37,7 +37,7 @@ app.get("/", (req, res) => {
   
 
 // Handle form submission
-app.post("/contact", (req, res) => {
+app.post("https://vishal-creator-profile.netlify.app/contact", (req, res) => {
   const { fullName, email, profession, message, agreeTerms } = req.body;
 
   // Create a new contact instance
