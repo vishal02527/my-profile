@@ -27,10 +27,14 @@ const Contact = mongoose.model("Contact", contactSchema);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Handle GET request to the root path
 app.get("/", (req, res) => {
+    res.sendFile("/index.html", { root: __dirname });
+  });
+  
+  app.get("/contact", (req, res) => {
     res.sendFile("/contact.html", { root: __dirname });
-});
+  });
+  
 
 // Handle form submission
 app.post("/contact", (req, res) => {
