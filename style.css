@@ -630,14 +630,14 @@ section h1 {
   transform: translateX(-50%);
   width: 20px;
   height: 20px;
-  background-color: #FFA500;
+  background-color: #ffa500;
   border-radius: 50%;
   border: 2px solid #fff;
   z-index: 1;
 }
 
-.timeline-item h3{
-  color: #B22222;
+.timeline-item h3 {
+  color: #b22222;
 }
 
 .timeline-content {
@@ -730,38 +730,37 @@ section h1 {
     max-width: 90%;
     margin: 70px auto 30px;
   }
-  
+
   section h1 {
     margin-bottom: 40px;
   }
-  
+
   #journey-of-cs-section {
     padding: 5px 10px;
   }
-  
+
   .timeline {
     padding: 10px 0;
   }
 
-  .timeline-item{
+  .timeline-item {
     margin-bottom: 35px;
     padding: 15px;
   }
-  
+
   .timeline-content {
     margin-top: 20px;
     font-size: 14px;
   }
-  
+
   .tooltip {
     left: 12%;
     font-size: 14px;
-    width: 200px;
+    width: 220px;
     height: 40px;
     padding: 10px 0;
     opacity: 1;
   }
-  
 }
 
 @media (max-width: 768px) {
