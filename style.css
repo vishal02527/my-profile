@@ -30,7 +30,7 @@
 }
 .cards:hover {
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.15);
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 .cards a {
   text-decoration: none;
@@ -143,18 +143,13 @@ footer ul li a i {
   font-family: "Poppins", sans-serif;
   padding: 12px 18px;
   text-align: center;
-  transition: all 0.25s;
+  transition: all 0.3s;
 }
 
 #indexButton1:hover {
   background-color: #ffc229;
   color: #fff;
   box-shadow: #ff6314 0 -6px 8px inset;
-  transform: scale(1.075);
-}
-
-#indexButton1:active {
-  transform: scale(1.025);
 }
 
 .biodataDiv {
