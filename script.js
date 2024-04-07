@@ -76,10 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "chat room": "./nodejs-projects.html",
         chatroom: "./nodejs-projects.html",
         "chat web app": "./nodejs-projects.html",
-        "project videos": "./project-videos.html",
-        "project video": "./project-videos.html",
-        videos: "./project-videos.html",
-        video: "./project-videos.html",
+        "creative projects": "./creative-projects.html",
+        magazine: "./creative-projects.html",
       };
 
       // Check if a direct match exists

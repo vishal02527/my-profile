@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project Videos</title>
+    <title>Creative projects</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,79 +17,124 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?&family=Poppins&family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?&family=Poppins&family=Raleway&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
     <style>
-      body{
-        background-color: #d8eafb;
-      }
-      section h1 {
-        text-align: center;
-        color: #0083ab;
-        margin-top: 40px;
-        margin-bottom: 40px;
-      }
-      .videos-div {
-        padding: 10px;
-        margin-left: 8%;
-      }
-
-      .video-card {
-        width: 300px;
-        background-color: #fff;
-        border-radius: 10px;
-        margin: 20px;
-        overflow: hidden;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        transition: all 0.4s ease-in-out;
-        opacity: 0.5;
-      }
-
-      .video-card:hover {
-        transform: scale(1.05);
-        opacity: 1;
-      }
-
-      .video-card video {
-        width: 100%;
-        height: 180px;
-        display: block;
-      }
-
-      .video-info {
-        padding: 20px;
-      }
-
-      .video-info h2 {
-        margin-bottom: 10px;
-        font-size: 24px;
-        color: #000;
-      }
-
-      .video-info p {
+      body {
+        font-family: Arial, sans-serif;
         margin: 0;
-        font-size: 14px;
-        color: #222;
-        font-family: "Poppins", "sans-serif";
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 850px;
+        margin: 2rem auto !important;
+        padding: 0 20px;
+      }
+
+      .project-section {
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-section h2 {
+        font-family: "Dancing Script", cursive;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 800;
+        font-size: 40px;
+        color: #f9b724;
+      }
+
+      .project-details p {
+        line-height: 1.6;
+        font-family: "Poppins", cursive;
+        font-size: 16px;
+        color: #777;
+      }
+
+      .view-button {
+        margin-top: 10px;
+        margin-left: 310px;
+        background-image: linear-gradient(to right, #0096ff, #0048ff);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .related-links {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .related-links ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      .related-links ul li {
+        margin-bottom: 10px;
+      }
+
+      .related-links ul li a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .related-links ul li a:hover {
+        text-decoration: underline;
       }
 
       @media (max-width: 768px) {
-        .videos-div {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin: 0;
+        .container {
+          max-width: 300px;
+          padding: 0 5px;
         }
-        .rowCard {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+
+        .project-section {
+          padding: 15px;
         }
-        .video-card {
-          width: 90%;
-          margin: 10px;
+
+        .project-section h2 {
+          margin-bottom: 30px;
+          font-size: 26px;
+        }
+
+        .project-details p {
+          line-height: 1.4;
+          font-size: 14px;
+        }
+
+        .view-button {
+          margin-top: 0px;
+          margin-left: 80px;
+          padding: 8px 12px;
+          font-size: 14px;
+        }
+
+        .related-links {
+          padding: 20px 20px 10px;
+          margin-top: 20px;
+        }
+
+        .related-links h3 {
+          font-size: 20px;
+        }
+
+        .related-links ul li {
+          margin-bottom: 5px;
+          font-size: 14px;
         }
       }
     </style>
@@ -168,8 +213,8 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./project-videos.html"
-                      >Project Videos</a
+                    <a class="dropdown-item" href="./creative-projects.html"
+                      >Creative projects</a
                     >
                   </li>
                 </ul>
@@ -208,114 +253,49 @@
           </div>
         </div>
       </nav>
-      <section>
-        <h1>My Project videos</h1>
-        <div class="videos-div">
-          <!-- First Row -->
-          <div class="rowCard">
-            <div class="video-card">
-              <div class="video-container">
-                <video controls>
-                  <source src="" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="video-info">
-                <h2>Project Title 1</h2>
-                <p>
-                  Introducing 'Nuuk' a meticulously crafted static website,
-                  seamlessly blending responsive design with the elegance of
-                  HTML and CSS code.
-                </p>
-              </div>
-            </div>
-            <div class="video-card">
-              <div class="video-container">
-                <video controls>
-                  <source src="" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="video-info">
-                <h2>Project Title 2</h2>
-                <p>
-                  In this project, details of IPL team are stored, we can add
-                  any specific team and team player and also view details of
-                  specific team and team player.
-                </p>
-              </div>
-            </div>
-            <div class="video-card">
-              <div class="video-container">
-                <video controls>
-                  <source src="" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="video-info">
-                <h2>Project Title 3</h2>
-                <p>
-                  This is an interesting responsive quiz web app with stylish
-                  design. A timer is also added in the quiz. You have to enter
-                  your name before playing quiz.
-                </p>
-              </div>
-            </div>
+      <section class="container">
+        <div class="project-section">
+          <h2>Magazine: Ujjwal gagan</h2>
+          <div class="project-details">
+            <p>
+              In my role as the magazine director, I had the privilege to
+              conceptualize and design 'Ujjwal Gagan', the official college
+              magazine of Gagan College of Management and Technology. As a CS
+              student, honing my design skills has been invaluable, allowing me
+              to merge technology with creativity to produce innovative and
+              visually compelling solutions. This project enabled me to combine
+              my passion for design with the essence of academic culture,
+              resulting in a visually captivating and informative publication. I
+              focused on creating a cohesive layout that seamlessly integrated
+              engaging content, vibrant imagery, and user-friendly navigation.
+              Through meticulous attention to detail and a deep understanding of
+              the college's brand identity, I successfully crafted a magazine
+              that not only showcases the achievements and insights of our
+              academic community but also serves as a timeless keepsake for
+              students, faculty, and alumni. 'Ujjwal Gagan' stands as a
+              testament to my commitment to excellence in design and my ability
+              to bring creative visions to life in the realm of print media.
+            </p>
+            <p style="margin-top: 30px; text-align: center; color: #009688">
+              Click the button below to read an inspiring magazine 👇🏻
+            </p>
+            <a href="#" target="_blank"><button class="view-button">Read Now</button></a>
           </div>
         </div>
-        <div class="videos-div">
-          <!-- Second Row -->
-          <div class="rowCard">
-            <div class="video-card">
-              <div class="video-container">
-                <video controls>
-                  <source src="" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="video-info">
-                <h2>Project Title 4</h2>
-                <p>
-                  This is a shopping website, user can add his/her favourite
-                  item into cart and by clicking on the cart he/she can place
-                  the order.
-                </p>
-              </div>
-            </div>
-            <div class="video-card">
-              <div class="video-container">
-                <video controls>
-                  <source src="" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="video-info">
-                <h2>Project Title 5</h2>
-                <p>
-                  This is best project that I've ever made in react. It's
-                  responsive and is for university purposes. Many attractive
-                  functionalities are used in this project.
-                </p>
-              </div>
-            </div>
-            <div class="video-card">
-              <div class="video-container">
-                <video controls>
-                  <source src="" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="video-info">
-                <h2>Project Title 6</h2>
-                <p>
-                  This is a store which contains the data of products. Checkbox
-                  filter functionality is implemented to filter the products on
-                  the basis of some specific criteria.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <aside class="related-links">
+          <h3>Explore more projects</h3>
+          <ul>
+            <li><a href="./html-css-projects.html">HTML/CSS Projects</a></li>
+            <li><a href="./reactjs-projects.html">Reactjs Projects</a></li>
+            <li><a href="./javascript-projects.html">Javascript Projects</a></li>
+            <li>
+              <a href="https://github.com/vishal02527/CPP-Projects"
+                >C/C++ Projects</a
+              >
+            </li>
+          </ul>
+        </aside>
       </section>
       <footer>
         <div class="leftSide">
@@ -352,10 +332,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
-    <script>
-      window.onload = function() {
-            alert('This page is under the construction!'); 
-        };
-    </script>
   </body>
 </html>
