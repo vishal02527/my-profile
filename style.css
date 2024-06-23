@@ -71,7 +71,7 @@
 }
 #secMidCard,
 #forthMidCard {
-  background-color: #0d6efd;
+  background-color: #36335f;
   color: #fff;
 }
 
@@ -159,6 +159,7 @@ footer ul li a i {
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: 1px 6px 12px #ddd;
+  border: 2px solid #d0cdcd;
   position: absolute;
   top: 30%;
   left: 15%;
@@ -168,7 +169,7 @@ footer ul li a i {
 #myImage img {
   width: 400px;
   height: 480px;
-  border: 3px solid rgb(76, 249, 76);
+  border: 3px solid #007b9f;
 }
 #biodata {
   margin-left: 70px;
@@ -218,7 +219,7 @@ footer ul li a i {
   #myImage img {
     width: 160px;
     height: 220px;
-    border: 1px solid rgb(76, 249, 76);
+    border: 1px solid #007b9f;
   }
   #biodata {
     margin-left: 8px;
@@ -381,14 +382,14 @@ footer ul li a i {
 }
 .cardContainer {
   padding: 10px;
-  margin: 40px 14% 40px 17%;
+  margin: 40px 14% 40px 12%;
   padding-left: 0px;
 }
 .rowCard {
   display: flex;
 }
 .projectCards {
-  margin: 10px;
+  margin: 20px;
   width: 30%;
   height: 450px;
   display: inline-block;
@@ -465,7 +466,7 @@ footer ul li a i {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  border: 1px solid #798c99;
+  border: 1px solid #4C0033;
   text-align: center;
   padding: 20px;
   margin: 20px 30px;
@@ -500,7 +501,7 @@ footer ul li a i {
 .skill-card .skill-area {
   width: 70%;
   height: 40px;
-  background-color: #058d7f;
+  background-color: #4C0033;
   position: absolute;
   left: 45px;
   border-radius: 20px;
@@ -542,12 +543,12 @@ footer ul li a i {
   font-size: 18px;
   font-weight: 500;
   background-color: #d2c9f8;
-  color: #7a5ded;
+  color: #00796b;
 }
 
 #life.active,
 #interest.active {
-  background-color: #8d72f9;
+  background-color: #004d40;
   color: #fff;
 }
 
@@ -590,7 +591,7 @@ section h1 {
 
 #journey-of-cs-section {
   padding: 20px;
-  background-color: #fff;
+  background-color: #EADBC8;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
