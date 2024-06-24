@@ -144,3 +144,18 @@ function showImages(category) {
 document.addEventListener("DOMContentLoaded", function () {
   showImages("life");
 });
+
+window.addEventListener("load", () => {
+  const loaderWrapper = document.getElementById("loader-wrapper");
+  const content = document.getElementById("content");
+
+  setTimeout(() => {
+    loaderWrapper.style.opacity = "0";
+    loaderWrapper.style.visibility = "hidden";
+    content.style.display = "block";
+    setTimeout(() => {
+      content.classList.add("loaded");
+      content.style.opacity = "1"; // Ensure content is fully visible
+    }, 100); // Slight delay to trigger the CSS transition
+  }, 3000); 
+});

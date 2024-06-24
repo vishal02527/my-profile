@@ -17,272 +17,280 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary"
-      style="position: sticky; top: 0; z-index: 100"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >Home</a
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+    </div>
+    <div id="content">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="position: sticky; top: 0; z-index: 100"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./html-css-projects.html"
+                      >Html/Css projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://github.com/vishal02527/CPP-Projects"
+                      target="_blank"
+                      >C++ projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./javascript-projects.html"
+                      >Javascript projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./reactjs-projects.html"
+                      >ReactJs projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./nodejs-projects.html"
+                      >NodeJs projects</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="rightNav">
+                <form class="formNav" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search all content"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-warning" type="submit">Search</button>
+                  <a href="./signup.html"
+                    ><button
+                      type="button"
+                      class="btn btn-success"
+                      style="margin-left: 10px"
+                    >
+                      Signup
+                    </button></a
+                  >
+                  <a href="./login.html"
+                    ><button
+                      type="button"
+                      class="btn btn-primary"
+                      style="margin-left: 10px"
+                    >
+                      Login
+                    </button></a
+                  >
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main style="margin: 50px auto">
+        <h1 class="proHead">ReactJs projects</h1>
+
+        <div class="cardContainer">
+          <div class="rowCard">
+            <div class="projectCards">
+              <img
+                src=".//images/pro-react1.png"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Grid design</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 10 Sep 2023</span>
+              <p class="cardpara">
+                This visionary project boasts an elegant grid layout featuring a
+                sleek top navbar, nine captivating cards, and a meticulously
+                crafted footer.
+              </p>
+              <a href="https://grid-design-react.vercel.app/" target="_blank"
+                ><button class="pro-btn">View Project</button></a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-react2.png"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Youtube inspired gallery</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 14 Sep 2023</span>
+              <p class="cardpara">
+                This is based on video cards, showcasing compelling thumbnails,
+                captivating titles, channel names, likes and reviews for each
+                video.
+              </p>
               <a
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                href="https://you-tube-gallery-by-vishal-kumar.vercel.app/"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
               >
-                Projects
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="./html-css-projects.html"
-                    >Html/Css projects</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://github.com/vishal02527/CPP-Projects"
-                    target="_blank"
-                    >C++ projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./javascript-projects.html"
-                    >Javascript projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./reactjs-projects.html"
-                    >ReactJs projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./nodejs-projects.html"
-                    >NodeJs projects</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <li class="rightNav">
-              <form class="formNav" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search all content"
-                  aria-label="Search"
-                />
-                <button class="btn btn-warning" type="submit">Search</button>
-                <a href="./signup.html"
-                  ><button
-                    type="button"
-                    class="btn btn-success"
-                    style="margin-left: 10px"
-                  >
-                    Signup
-                  </button></a
-                >
-                <a href="./login.html"
-                  ><button
-                    type="button"
-                    class="btn btn-primary"
-                    style="margin-left: 10px"
-                  >
-                    Login
-                  </button></a
-                >
-              </form>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <main style="margin: 50px auto">
-      <h1 class="proHead">ReactJs projects</h1>
-
-      <div class="cardContainer">
-        <div class="rowCard">
-          <div class="projectCards">
-            <img
-              src=".//images/pro-react1.png"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Grid design</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 10 Sep 2023</span>
-            <p class="cardpara">
-              This visionary project boasts an elegant grid layout featuring a
-              sleek top navbar, nine captivating cards, and a meticulously
-              crafted footer.
-            </p>
-            <a href="https://grid-design-react.vercel.app/" target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-react3.png"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Admin panel</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 29 Sep 2023</span>
+              <p class="cardpara">
+                Admin panel is a majour project made with mobile responsive
+                design. It consists of Dynamic graph charts and information of
+                products and users.
+              </p>
+              <a
+                href="https://react-admin-panel-by-vishal-kumar.netlify.app/"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
           </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-react2.png"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Youtube inspired gallery</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 14 Sep 2023</span>
-            <p class="cardpara">
-              This is based on video cards, showcasing compelling thumbnails,
-              captivating titles, channel names, likes and reviews for each
-              video.
-            </p>
-            <a
-              href="https://you-tube-gallery-by-vishal-kumar.vercel.app/"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-react3.png"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Admin panel</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 29 Sep 2023</span>
-            <p class="cardpara">
-              Admin panel is a majour project made with mobile responsive
-              design. It consists of Dynamic graph charts and information of
-              products and users.
-            </p>
-            <a
-              href="https://react-admin-panel-by-vishal-kumar.netlify.app/"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
+          <div class="rowCard">
+            <div class="projectCards">
+              <img
+                src=".//images/pro-react4.png"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Movie search engine</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 16 Sep 2023</span>
+              <p class="cardpara">
+                This project contains some movies in a card format, with their
+                thumbnail and title(on hover). We can serach those movies by
+                their title name.
+              </p>
+              <a
+                href="https://movie-search-web-by-vishal-kumar.vercel.app/"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-react5.png"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Vishal digital university</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 01 Nov 2023</span>
+              <p class="cardpara">
+                This is best project that I've ever made in react. It's
+                responsive and is for university purposes. Many attractive
+                functionalities are used in this project.
+              </p>
+              <a
+                href="https://vishal-digital-university.vercel.app/"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-react6.png"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Kafene web app</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 18 Nov 2023</span>
+              <p class="cardpara">
+                This is a store which contains the data of products. Checkbox
+                filter functionality is implemented to filter the products on
+                the basis of some specific criteria.
+              </p>
+              <a href="https://kafene-store.netlify.app/" target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
           </div>
         </div>
-        <div class="rowCard">
-          <div class="projectCards">
-            <img
-              src=".//images/pro-react4.png"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Movie search engine</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 16 Sep 2023</span>
-            <p class="cardpara">
-              This project contains some movies in a card format, with their
-              thumbnail and title(on hover). We can serach those movies by their
-              title name.
-            </p>
-            <a
-              href="https://movie-search-web-by-vishal-kumar.vercel.app/"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-react5.png"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Vishal digital university</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 01 Nov 2023</span>
-            <p class="cardpara">
-              This is best project that I've ever made in react. It's responsive
-              and is for university purposes. Many attractive functionalities
-              are used in this project.
-            </p>
-            <a
-              href="https://vishal-digital-university.vercel.app/"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-react6.png"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Kafene web app</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 18 Nov 2023</span>
-            <p class="cardpara">
-              This is a store which contains the data of products. Checkbox
-              filter functionality is implemented to filter the products on the
-              basis of some specific criteria.
-            </p>
-            <a href="https://kafene-store.netlify.app/" target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
+      </main>
+
+      <footer>
+        <div class="leftSide">
+          <a href="/">
+            <img class="footImg" src=".//images/my-avatar.png" />
+          </a>
+          <span class="creator">All rights reserved ©2024, Vishal Kumar</span>
         </div>
-      </div>
-    </main>
 
-    <footer>
-      <div class="leftSide">
-        <a href="/">
-          <img class="footImg" src=".//images/my-avatar.png" />
-        </a>
-        <span class="creator">All rights reserved ©2024, Vishal Kumar</span>
-      </div>
-
-      <ul>
-        <li>
-          <a href="https://github.com/vishal02527" target="_blank"
-            ><i class="fa-brands fa-github fa-2xl"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/vishal-kumar-8303a3283/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin fa-2xl"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://codepen.io/Vishal-Kumar25" target="_blank"
-            ><i class="fa-brands fa-codepen fa-2xl"></i
-          ></a>
-        </li>
-      </ul>
-    </footer>
+        <ul>
+          <li>
+            <a href="https://github.com/vishal02527" target="_blank"
+              ><i class="fa-brands fa-github fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/vishal-kumar-8303a3283/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://codepen.io/Vishal-Kumar25" target="_blank"
+              ><i class="fa-brands fa-codepen fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

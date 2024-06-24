@@ -22,8 +22,69 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
+  <style>
+    #loader-wrapper-home {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      z-index: 1000;
+    }
+
+    #loader-home {
+      --c: no-repeat linear-gradient(orange 0 0);
+      background: var(--c), var(--c), var(--c), var(--c), var(--c), var(--c),
+        var(--c), var(--c), var(--c);
+      background-size: 16px 16px;
+      animation: l32-1 1s infinite, l32-2 1s infinite;
+    }
+
+    @keyframes l32-1 {
+      0%,
+      100% {
+        width: 45px;
+        height: 45px;
+      }
+      35%,
+      65% {
+        width: 65px;
+        height: 65px;
+      }
+    }
+    @keyframes l32-2 {
+      0%,
+      40% {
+        background-position: 0 0, 0 50%, 0 100%, 50% 100%, 100% 100%, 100% 50%,
+          100% 0, 50% 0, 50% 50%;
+      }
+      60%,
+      100% {
+        background-position: 0 50%, 0 100%, 50% 100%, 100% 100%, 100% 50%,
+          100% 0, 50% 0, 0 0, 50% 50%;
+      }
+    }
+
+    #content-home {
+      display: none;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .loaded-home #content-home {
+      display: block;
+      opacity: 1;
+    }
+  </style>
   <body>
-    <main class="homeMain">
+    <div id="loader-wrapper-home">
+      <div id="loader-home"></div>
+    </div>
+    <main class="homeMain" id="content-home">
       <nav
         class="navbar navbar-expand-lg bg-body-tertiary"
         style="position: sticky; top: 0; z-index: 100"
@@ -537,5 +598,23 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const loaderWrapperHome = document.getElementById(
+          "loader-wrapper-home"
+        );
+        const contentHome = document.getElementById("content-home");
+
+        setTimeout(() => {
+          loaderWrapperHome.style.opacity = "0";
+          loaderWrapperHome.style.visibility = "hidden";
+          contentHome.style.display = "block";
+          setTimeout(() => {
+            contentHome.classList.add("loaded-home");
+            contentHome.style.opacity = "1"; // Ensure content is fully visible
+          }, 100); // Slight delay to trigger the CSS transition
+        }, 3000); // Adjust the timeout duration as needed
+      });
+    </script>
   </body>
 </html>

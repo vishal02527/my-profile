@@ -17,205 +17,217 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary"
-      style="position: sticky; top: 0; z-index: 100"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+    </div>
+    <div id="content">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="position: sticky; top: 0; z-index: 100"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./html-css-projects.html"
+                      >Html/Css projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://github.com/vishal02527/CPP-Projects"
+                      target="_blank"
+                      >C++ projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./javascript-projects.html"
+                      >Javascript projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./reactjs-projects.html"
+                      >ReactJs projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./nodejs-projects.html"
+                      >NodeJs projects</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="rightNav">
+                <form class="formNav" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search all content"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-warning" type="submit">Search</button>
+                  <a href="./signup.html"
+                    ><button
+                      type="button"
+                      class="btn btn-success"
+                      style="margin-left: 10px"
+                    >
+                      Signup
+                    </button></a
+                  >
+                  <a href="./login.html"
+                    ><button
+                      type="button"
+                      class="btn btn-primary"
+                      style="margin-left: 10px"
+                    >
+                      Login
+                    </button></a
+                  >
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main style="margin: 50px auto">
+        <h1 class="proHead">NodeJs projects</h1>
+
+        <div class="cardContainer">
+          <div class="rowCard">
+            <div class="projectCards">
+              <img
+                src=".//images/pro-node1.png"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Player App</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 31 Oct 2023</span>
+              <p class="cardpara">
+                This project is based on the data of the players, that are
+                fetched from database and user can see their details on clicking
+                previous and next button.
+              </p>
               <a
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                href="https://github.com/vishal02527/player-app"
+                target="_blank"
+                ><button class="pro-btn">View Source Code</button></a
               >
-                Projects
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="./html-css-projects.html"
-                    >Html/Css projects</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://github.com/vishal02527/CPP-Projects"
-                    target="_blank"
-                    >C++ projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./javascript-projects.html"
-                    >Javascript projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./reactjs-projects.html"
-                    >ReactJs projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./nodejs-projects.html"
-                    >NodeJs projects</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <li class="rightNav">
-              <form class="formNav" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search all content"
-                  aria-label="Search"
-                />
-                <button class="btn btn-warning" type="submit">Search</button>
-                <a href="./signup.html"
-                  ><button
-                    type="button"
-                    class="btn btn-success"
-                    style="margin-left: 10px"
-                  >
-                    Signup
-                  </button></a
-                >
-                <a href="./login.html"
-                  ><button
-                    type="button"
-                    class="btn btn-primary"
-                    style="margin-left: 10px"
-                  >
-                    Login
-                  </button></a
-                >
-              </form>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <main style="margin: 50px auto">
-      <h1 class="proHead">NodeJs projects</h1>
-
-      <div class="cardContainer">
-        <div class="rowCard">
-          <div class="projectCards">
-            <img
-              src=".//images/pro-node1.png"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Player App</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 31 Oct 2023</span>
-            <p class="cardpara">
-              This project is based on the data of the players, that are fetched
-              from database and user can see their details on clicking previous
-              and next button.
-            </p>
-            <a href="https://github.com/vishal02527/player-app" target="_blank"
-              ><button class="pro-btn">View Source Code</button></a
-            >
-          </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-node2.png"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Chat Room</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 08 Nov 2023</span>
-            <p class="cardpara">
-              This is client-based chat room where users can chat to each other
-              in real time environment. Only he/she has to fill his/her name to
-              enter in chat room.
-            </p>
-            <a href="https://github.com/vishal02527/Chat-Room" target="_blank"
-              ><button class="pro-btn">View Source Code</button></a
-            >
-          </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-node3.png"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Chat Web App</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 11 Nov 2023</span>
-            <p class="cardpara">
-              An user can see all the latest records and fetch the records from
-              the database on filtering by starting and ending date in
-              real-time.
-            </p>
-            <a href="https://github.com/vishal02527/Chat-WebApp" target="_blank"
-              ><button class="pro-btn">View Source Code</button></a
-            >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-node2.png"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Chat Room</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 08 Nov 2023</span>
+              <p class="cardpara">
+                This is client-based chat room where users can chat to each
+                other in real time environment. Only he/she has to fill his/her
+                name to enter in chat room.
+              </p>
+              <a href="https://github.com/vishal02527/Chat-Room" target="_blank"
+                ><button class="pro-btn">View Source Code</button></a
+              >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-node3.png"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Chat Web App</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 11 Nov 2023</span>
+              <p class="cardpara">
+                An user can see all the latest records and fetch the records
+                from the database on filtering by starting and ending date in
+                real-time.
+              </p>
+              <a
+                href="https://github.com/vishal02527/Chat-WebApp"
+                target="_blank"
+                ><button class="pro-btn">View Source Code</button></a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <footer>
-      <div class="leftSide">
-        <a href="/">
-          <img class="footImg" src=".//images/my-avatar.png" />
-        </a>
-        <span class="creator">All rights reserved ©2024, Vishal Kumar</span>
-      </div>
+      <footer>
+        <div class="leftSide">
+          <a href="/">
+            <img class="footImg" src=".//images/my-avatar.png" />
+          </a>
+          <span class="creator">All rights reserved ©2024, Vishal Kumar</span>
+        </div>
 
-      <ul>
-        <li>
-          <a href="https://github.com/vishal02527" target="_blank"
-            ><i class="fa-brands fa-github fa-2xl"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/vishal-kumar-8303a3283/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin fa-2xl"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://codepen.io/Vishal-Kumar25" target="_blank"
-            ><i class="fa-brands fa-codepen fa-2xl"></i
-          ></a>
-        </li>
-      </ul>
-    </footer>
+        <ul>
+          <li>
+            <a href="https://github.com/vishal02527" target="_blank"
+              ><i class="fa-brands fa-github fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/vishal-kumar-8303a3283/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://codepen.io/Vishal-Kumar25" target="_blank"
+              ><i class="fa-brands fa-codepen fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

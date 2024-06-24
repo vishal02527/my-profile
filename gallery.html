@@ -72,171 +72,179 @@
     </style>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary"
-      style="position: sticky; top: 0; z-index: 100"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Projects
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="./html-css-projects.html"
-                    >Html/Css projects</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://github.com/vishal02527/CPP-Projects"
-                    target="_blank"
-                    >C++ projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./javascript-projects.html"
-                    >Javascript projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./reactjs-projects.html"
-                    >ReactJs projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./nodejs-projects.html"
-                    >NodeJs projects</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <li class="rightNav">
-              <form class="formNav" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search all content"
-                  aria-label="Search"
-                />
-                <button class="btn btn-warning" type="submit">Search</button>
-                <a href="./signup.html"
-                  ><button
-                    type="button"
-                    class="btn btn-success"
-                    style="margin-left: 10px"
-                  >
-                    Signup
-                  </button></a
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+    </div>
+    <div id="content">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="position: sticky; top: 0; z-index: 100"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
                 >
-                <a href="./login.html"
-                  ><button
-                    type="button"
-                    class="btn btn-primary"
-                    style="margin-left: 10px"
-                  >
-                    Login
-                  </button></a
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-              </form>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <main>
-      <h1>Gallery</h1>
-      <div class="gallery">
-        <div class="gallery-item">
-          <img src="./images/my-img1.jpg" alt="Image 1" />
-          <div class="caption">Serenity among the trees</div>
-        </div>
-        <div class="gallery-item">
-          <img src="./images/my-img2.jpg" alt="Image 2" />
-          <div class="caption">Nature's perfect symmetry</div>
-        </div>
-        <div class="gallery-item">
-          <img src="./images/my-img4.jpg" alt="Image 3" />
-          <div class="caption">Another year, another adventure</div>
-        </div>
-        <div class="gallery-item">
-          <img src="./images/my-img6.jpg" alt="Image 4" />
-          <div class="caption">Lost in the grandeur of the Taj</div>
-        </div>
-        <div class="gallery-item">
-          <img src="./images/my-img7.jpg" alt="Image 5" />
-          <div class="caption">Embracing elegance in my ethnic attire</div>
-        </div>
-        <div class="gallery-item">
-          <img src="./images/my-img3.jpg" alt="Image 6" />
-          <div class="caption">Admiring the beauty of creativity</div>
-        </div>
-        <div class="gallery-item">
-          <img src="./images/my-img5.jpg" alt="Image 7" />
-          <div class="caption">Where knowledge blooms</div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="leftSide">
-        <a href="/">
-          <img class="footImg" src=".//images/my-avatar.png" />
-        </a>
-        <span class="creator">All rights reserved ©2024, Vishal Kumar</span>
-      </div>
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./html-css-projects.html"
+                      >Html/Css projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://github.com/vishal02527/CPP-Projects"
+                      target="_blank"
+                      >C++ projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./javascript-projects.html"
+                      >Javascript projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./reactjs-projects.html"
+                      >ReactJs projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./nodejs-projects.html"
+                      >NodeJs projects</a
+                    >
+                  </li>
+                </ul>
+              </li>
 
-      <ul>
-        <li>
-          <a href="https://github.com/vishal02527" target="_blank"
-            ><i class="fa-brands fa-github fa-2xl"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/vishal-kumar-8303a3283/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin fa-2xl"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://codepen.io/Vishal-Kumar25" target="_blank"
-            ><i class="fa-brands fa-codepen fa-2xl"></i
-          ></a>
-        </li>
-      </ul>
-    </footer>
+              <li class="rightNav">
+                <form class="formNav" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search all content"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-warning" type="submit">Search</button>
+                  <a href="./signup.html"
+                    ><button
+                      type="button"
+                      class="btn btn-success"
+                      style="margin-left: 10px"
+                    >
+                      Signup
+                    </button></a
+                  >
+                  <a href="./login.html"
+                    ><button
+                      type="button"
+                      class="btn btn-primary"
+                      style="margin-left: 10px"
+                    >
+                      Login
+                    </button></a
+                  >
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h1>Gallery</h1>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="./images/my-img1.jpg" alt="Image 1" />
+            <div class="caption">Serenity among the trees</div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/my-img2.jpg" alt="Image 2" />
+            <div class="caption">Nature's perfect symmetry</div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/my-img4.jpg" alt="Image 3" />
+            <div class="caption">Another year, another adventure</div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/my-img6.jpg" alt="Image 4" />
+            <div class="caption">Lost in the grandeur of the Taj</div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/my-img7.jpg" alt="Image 5" />
+            <div class="caption">Embracing elegance in my ethnic attire</div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/my-img3.jpg" alt="Image 6" />
+            <div class="caption">Admiring the beauty of creativity</div>
+          </div>
+          <div class="gallery-item">
+            <img src="./images/my-img5.jpg" alt="Image 7" />
+            <div class="caption">Where knowledge blooms</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="leftSide">
+          <a href="/">
+            <img class="footImg" src=".//images/my-avatar.png" />
+          </a>
+          <span class="creator">All rights reserved ©2024, Vishal Kumar</span>
+        </div>
+
+        <ul>
+          <li>
+            <a href="https://github.com/vishal02527" target="_blank"
+              ><i class="fa-brands fa-github fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/vishal-kumar-8303a3283/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://codepen.io/Vishal-Kumar25" target="_blank"
+              ><i class="fa-brands fa-codepen fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

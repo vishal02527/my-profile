@@ -17,397 +17,408 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary"
-      style="position: sticky; top: 0; z-index: 100"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+    </div>
+    <div id="content">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="position: sticky; top: 0; z-index: 100"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Vishal's Profile</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./html-css-projects.html"
+                      >Html/Css projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://github.com/vishal02527/CPP-Projects"
+                      target="_blank"
+                      >C++ projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./javascript-projects.html"
+                      >Javascript projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./reactjs-projects.html"
+                      >ReactJs projects</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./nodejs-projects.html"
+                      >NodeJs projects</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="rightNav">
+                <form class="formNav" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search all content"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-warning" type="submit">Search</button>
+                  <a href="./signup.html"
+                    ><button
+                      type="button"
+                      class="btn btn-success"
+                      style="margin-left: 10px"
+                    >
+                      Signup
+                    </button></a
+                  >
+                  <a href="./login.html"
+                    ><button
+                      type="button"
+                      class="btn btn-primary"
+                      style="margin-left: 10px"
+                    >
+                      Login
+                    </button></a
+                  >
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main style="margin: 50px auto">
+        <h1 class="proHead">Javascript projects</h1>
+
+        <div class="cardContainer">
+          <div class="rowCard">
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js1.jpeg"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Hospital patient records</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 03 Aug 2023</span>
+              <p class="cardpara">
+                This project is useful for storing the data of patients in a
+                hospital. In this project, three input fields are used, that
+                are, patient name, age and disease.
+              </p>
               <a
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                href="https://codepen.io/Vishal-Kumar25/pen/yLQZWEv"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
               >
-                Projects
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="./html-css-projects.html"
-                    >Html/Css projects</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="https://github.com/vishal02527/CPP-Projects"
-                    target="_blank"
-                    >C++ projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./javascript-projects.html"
-                    >Javascript projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./reactjs-projects.html"
-                    >ReactJs projects</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./nodejs-projects.html"
-                    >NodeJs projects</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <li class="rightNav">
-              <form class="formNav" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search all content"
-                  aria-label="Search"
-                />
-                <button class="btn btn-warning" type="submit">Search</button>
-                <a href="./signup.html"
-                  ><button
-                    type="button"
-                    class="btn btn-success"
-                    style="margin-left: 10px"
-                  >
-                    Signup
-                  </button></a
-                >
-                <a href="./login.html"
-                  ><button
-                    type="button"
-                    class="btn btn-primary"
-                    style="margin-left: 10px"
-                  >
-                    Login
-                  </button></a
-                >
-              </form>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <main style="margin: 50px auto">
-      <h1 class="proHead">Javascript projects</h1>
-
-      <div class="cardContainer">
-        <div class="rowCard">
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js1.jpeg"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Hospital patient records</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 03 Aug 2023</span>
-            <p class="cardpara">
-              This project is useful for storing the data of patients in a
-              hospital. In this project, three input fields are used, that are,
-              patient name, age and disease.
-            </p>
-            <a
-              href="https://codepen.io/Vishal-Kumar25/pen/yLQZWEv"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js2.jpeg"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Marksheet generator</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 02 Aug 2023</span>
+              <p class="cardpara">
+                It generates a marksheet by taking input as marks for different
+                subjects and after calculating the percentage and grade, it
+                gives marksheet.
+              </p>
+              <a
+                href="https://codepen.io/Vishal-Kumar25/pen/ZEmwyyd"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js3.png"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">IPL Team Project</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 25 Sep 2023</span>
+              <p class="cardpara">
+                In this project, details of IPL team are stored, we can add any
+                specific team and team player and also view details of specific
+                team and team player.
+              </p>
+              <a
+                href="https://ipl-team-by-vishal-kumar.netlify.app/"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
           </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js2.jpeg"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Marksheet generator</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 02 Aug 2023</span>
-            <p class="cardpara">
-              It generates a marksheet by taking input as marks for different
-              subjects and after calculating the percentage and grade, it gives
-              marksheet.
-            </p>
-            <a
-              href="https://codepen.io/Vishal-Kumar25/pen/ZEmwyyd"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
+          <div class="rowCard">
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js4.jpeg"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Student/Teacher records</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 26 July 2023</span>
+              <p class="cardpara">
+                This stores the data of students and teachers manually. We have
+                one home page where we can choose whose data we have to store
+                teachers or students.
+              </p>
+              <a
+                href="https://student-teacher-record-by-vishalkumar.netlify.app/"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js5.jpeg"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Set your journey</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 04 Aug 2023</span>
+              <p class="cardpara">
+                Using the set your journey app you can plan your journey. Three
+                input fields are there one is for destination, second is for
+                date and the third is for time.
+              </p>
+              <a
+                href="https://codepen.io/Vishal-Kumar25/pen/poQYNge"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js6.jpeg"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">The quiz app</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 06 Aug 2023</span>
+              <p class="cardpara">
+                This project is based on quiz containing ten questions and four
+                options for each question. After submitting the quiz, score will
+                be shown in the score board.
+              </p>
+              <a
+                href="https://quiz-app-by-vishal-kumar.netlify.app/"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
           </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js3.png"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">IPL Team Project</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 25 Sep 2023</span>
-            <p class="cardpara">
-              In this project, details of IPL team are stored, we can add any
-              specific team and team player and also view details of specific
-              team and team player.
-            </p>
-            <a
-              href="https://ipl-team-by-vishal-kumar.netlify.app/"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
+          <div class="rowCard">
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js7.jpeg"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Responsive Quiz app</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 07 Nov 2023</span>
+              <p class="cardpara">
+                This is an interesting responsive quiz web app with stylish
+                design. A timer is also added in the quiz. You have to enter
+                your name before playing quiz.
+              </p>
+              <a href="https://playquizwithvishal.netlify.app/" target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js8.jpeg"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">My Strength Shree Krishna</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 15 Nov 2023</span>
+              <p class="cardpara">
+                This website is based on devotional content. Many resources and
+                references are here to motivate you towards Krishna's devotion.
+              </p>
+              <a
+                href="https://mystrengthshreekrishna.vercel.app/"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js9.jpeg"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">ShopLane Website</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 12 Aug 2023</span>
+              <p class="cardpara">
+                This is a shopping website, user can add his/her favourite item
+                into cart and by clicking on the cart he/she can place the
+                order.
+              </p>
+              <a
+                href="https://shoplane-website-by-vishal-kumar.netlify.app/;"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
           </div>
-        </div>
-        <div class="rowCard">
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js4.jpeg"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Student/Teacher records</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 26 July 2023</span>
-            <p class="cardpara">
-              This stores the data of students and teachers manually. We have
-              one home page where we can choose whose data we have to store
-              teachers or students.
-            </p>
-            <a
-              href="https://student-teacher-record-by-vishalkumar.netlify.app/"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js5.jpeg"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Set your journey</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 04 Aug 2023</span>
-            <p class="cardpara">
-              Using the set your journey app you can plan your journey. Three
-              input fields are there one is for destination, second is for date
-              and the third is for time.
-            </p>
-            <a
-              href="https://codepen.io/Vishal-Kumar25/pen/poQYNge"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js6.jpeg"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">The quiz app</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 06 Aug 2023</span>
-            <p class="cardpara">
-              This project is based on quiz containing ten questions and four
-              options for each question. After submitting the quiz, score will
-              be shown in the score board.
-            </p>
-            <a
-              href="https://quiz-app-by-vishal-kumar.netlify.app/"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
-        </div>
-        <div class="rowCard">
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js7.jpeg"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Responsive Quiz app</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 07 Nov 2023</span>
-            <p class="cardpara">
-              This is an interesting responsive quiz web app with stylish
-              design. A timer is also added in the quiz. You have to enter your
-              name before playing quiz.
-            </p>
-            <a href="https://playquizwithvishal.netlify.app/" target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js8.jpeg"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">My Strength Shree Krishna</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 15 Nov 2023</span>
-            <p class="cardpara">
-              This website is based on devotional content. Many resources and
-              references are here to motivate you towards Krishna's devotion.
-            </p>
-            <a href="https://mystrengthshreekrishna.vercel.app/" target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js9.jpeg"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">ShopLane Website</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 12 Aug 2023</span>
-            <p class="cardpara">
-              This is a shopping website, user can add his/her favourite item
-              into cart and by clicking on the cart he/she can place the order.
-            </p>
-            <a
-              href="https://shoplane-website-by-vishal-kumar.netlify.app/;"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
+          <div class="rowCard">
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js10.jpeg"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Expense Tracker App</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 16 Feb 2024</span>
+              <p class="cardpara">
+                Built an expense tracking website using html, css and
+                javascript. With the help of this app, we can easily maintain
+                our expenses according to our income.
+              </p>
+              <a
+                href="https://expense-tracker-app-by-vishal-kumar.netlify.app/"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js11.jpeg"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Social Media Dashboard</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 16 Feb 2024</span>
+              <p class="cardpara">
+                In this website, after signing up, users can access the
+                dashboard, and can create, edit or delete the post. And can see
+                dashboard in white or dark mode.
+              </p>
+              <a
+                href="https://social-media-dashboard-by-vishal-kumar.vercel.app/"
+                target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
+            <div class="projectCards">
+              <img
+                src=".//images/pro-js12.jpeg"
+                width="250"
+                height="200"
+                class="cardimage"
+              />
+              <h2 class="cardtitle">Portfolio</h2>
+              <span class="name">Vishal Kumar</span>
+              <span>| 16 Feb 2024</span>
+              <p class="cardpara">
+                A simple and amazing portfolio containing a jumbotron, about,
+                education, experience, projects, skills and contact sections.
+              </p>
+              <a href="https://great-portfolio.netlify.app/" target="_blank"
+                ><button class="pro-btn">View Project</button></a
+              >
+            </div>
           </div>
         </div>
-        <div class="rowCard">
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js10.jpeg"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Expense Tracker App</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 16 Feb 2024</span>
-            <p class="cardpara">
-              Built an expense tracking website using html, css and javascript.
-              With the help of this app, we can easily maintain our expenses
-              according to our income.
-            </p>
-            <a
-              href="https://expense-tracker-app-by-vishal-kumar.netlify.app/"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js11.jpeg"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Social Media Dashboard</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 16 Feb 2024</span>
-            <p class="cardpara">
-              In this website, after signing up, users can access
-              the dashboard, and can create, edit or delete the post. And can see dashboard in white or dark mode.
-            </p>
-            <a
-              href="https://social-media-dashboard-by-vishal-kumar.vercel.app/"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
-          <div class="projectCards">
-            <img
-              src=".//images/pro-js12.jpeg"
-              width="250"
-              height="200"
-              class="cardimage"
-            />
-            <h2 class="cardtitle">Portfolio</h2>
-            <span class="name">Vishal Kumar</span>
-            <span>| 16 Feb 2024</span>
-            <p class="cardpara">
-              A simple and amazing portfolio containing a jumbotron, about, education, experience, projects, skills and contact sections.
-            </p>
-            <a
-              href="https://great-portfolio.netlify.app/"
-              target="_blank"
-              ><button class="pro-btn">View Project</button></a
-            >
-          </div>
+      </main>
+
+      <footer>
+        <div class="leftSide">
+          <a href="/">
+            <img class="footImg" src=".//images/my-avatar.png" />
+          </a>
+          <span class="creator">All rights reserved ©2024, Vishal Kumar</span>
         </div>
-      </div>
-    </main>
 
-    <footer>
-      <div class="leftSide">
-        <a href="/">
-          <img class="footImg" src=".//images/my-avatar.png" />
-        </a>
-        <span class="creator">All rights reserved ©2024, Vishal Kumar</span>
-      </div>
-
-      <ul>
-        <li>
-          <a href="https://github.com/vishal02527" target="_blank"
-            ><i class="fa-brands fa-github fa-2xl"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/vishal-kumar-8303a3283/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin fa-2xl"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://codepen.io/Vishal-Kumar25" target="_blank"
-            ><i class="fa-brands fa-codepen fa-2xl"></i
-          ></a>
-        </li>
-      </ul>
-    </footer>
+        <ul>
+          <li>
+            <a href="https://github.com/vishal02527" target="_blank"
+              ><i class="fa-brands fa-github fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/vishal-kumar-8303a3283/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://codepen.io/Vishal-Kumar25" target="_blank"
+              ><i class="fa-brands fa-codepen fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
