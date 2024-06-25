@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         }
 
-        // If no matching page is found, you can display an error message or handle it in your own way
-        alert("No matching page found for your search.");
+        // If no matching page is found, redirect to 404Error.html
+        window.location.href = "./404Error.html";
       }
     }
   });
