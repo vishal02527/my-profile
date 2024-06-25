@@ -220,7 +220,7 @@ footer ul li a i {
 #myImage img {
   width: 400px;
   height: 480px;
-  border: 2px solid #686767;
+  border: 2px solid #828181;
 }
 #biodata {
   margin-left: 70px;
@@ -247,7 +247,7 @@ footer ul li a i {
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
-  #loader{
+  #loader {
     width: 50px;
     height: 50px;
   }
@@ -274,7 +274,7 @@ footer ul li a i {
   #myImage img {
     width: 160px;
     height: 217px;
-    border: 1px solid #007b9f;
+    border: 1px solid #828181;
   }
   #biodata {
     margin-left: 8px;
@@ -492,7 +492,11 @@ footer ul li a i {
 .pro-btn {
   display: inline-block;
   border-radius: 4px;
-  background-image: linear-gradient( 109.6deg,  rgba(61,131,97,1) 11.2%, rgba(28,103,88,1) 91.1% );
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(61, 131, 97, 1) 11.2%,
+    rgba(28, 103, 88, 1) 91.1%
+  );
   border: none;
   text-align: center;
   font-size: 16px;
@@ -560,31 +564,31 @@ footer ul li a i {
 #skill-card-1 {
   background: linear-gradient(
     rgb(255, 255, 255),
-    rgba(114, 46, 209, 0.14) 130%
+    rgba(144, 71, 247, 0.14) 130%
   );
 }
 
 #skill-card-2 {
-  background: linear-gradient(rgb(255, 255, 255), rgba(222, 55, 0, 0.14) 130%);
+  background: linear-gradient(rgb(255, 255, 255), rgba(252, 83, 27, 0.14) 130%);
 }
 
 #skill-card-3 {
   background: linear-gradient(
     rgb(255, 255, 255),
-    rgba(31, 130, 104, 0.14) 130%
+    rgba(55, 180, 146, 0.14) 130%
   );
 }
 
 #skill-card-4 {
-  background: linear-gradient(rgb(255, 255, 255), #ffeea9 130%);
+  background: linear-gradient(rgb(255, 255, 255), #fff2bc 130%);
 }
 
 #skill-card-5 {
-  background: linear-gradient(rgb(255, 255, 255), #bdf1c0 130%);
+  background: linear-gradient(rgb(255, 255, 255), #dafddc 130%);
 }
 
 #skill-card-6 {
-  background: linear-gradient(rgb(255, 255, 255), #ffdca9 130%);
+  background: linear-gradient(rgb(255, 255, 255), #fde6c5 130%);
 }
 
 .skill-card p {
