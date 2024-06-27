@@ -222,7 +222,7 @@ footer ul li a i {
 
 #indexButton1 {
   appearance: none;
-  background-color: #e5e4e4;
+  background-color: #ffffff;
   border-radius: 40em;
   border-style: none;
   box-shadow: #adcfff 0 -12px 6px inset;
@@ -292,6 +292,10 @@ footer ul li a i {
   .indexDiv {
     height: 220px;
     margin-bottom: 150px;
+  }
+
+  .galleryBtn{
+    right: 5%;
   }
 
   .dynamic-text-div p {
@@ -404,7 +408,7 @@ footer ul li a i {
     margin-right: 10px;
   }
   .leftSide .creator {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   footer ul {
