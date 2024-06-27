@@ -176,20 +176,58 @@ footer ul li a i {
   margin-bottom: 300px;
   box-sizing: border-box;
 }
-.btnIndexDiv {
+
+.galleryBtn {
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  z-index: 100;
+}
+
+.dynamic-text-div p {
+  color: #fff;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 40%;
+}
+
+.dynamic-text-div span {
+  color: #f8d800;
+}
+
+.cursor {
+  position: absolute;
+  top: 24%;
+  height: 25px;
+  width: 2px;
+  background-color: #0096ff;
+  font-weight: 800;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 #indexButton1 {
   appearance: none;
-  background-color: #ffffff;
+  background-color: #e5e4e4;
   border-radius: 40em;
   border-style: none;
   box-shadow: #adcfff 0 -12px 6px inset;
   box-sizing: border-box;
-  color: #333;
+  color: #666;
   cursor: pointer;
   outline: none;
   font-family: "Poppins", sans-serif;
@@ -255,14 +293,21 @@ footer ul li a i {
     height: 220px;
     margin-bottom: 150px;
   }
-  .btnIndexDiv {
-    top: 7%;
-    left: 4%;
+
+  .dynamic-text-div p {
+    font-size: 20px;
+    left: 16%;
   }
+
+  .cursor {
+    display: none;
+  }
+
   #indexButton1 {
     padding: 8px 12px;
     font-size: 12px;
   }
+
   .biodataDiv {
     width: 92%;
     height: 230px;
@@ -273,7 +318,7 @@ footer ul li a i {
 
   #myImage img {
     width: 160px;
-    height: 217px;
+    height: 219px;
     border: 1px solid #828181;
   }
   #biodata {
@@ -293,13 +338,13 @@ footer ul li a i {
     font-size: 6px;
   }
   #paraIndex3 {
-    font-size: 6px;
+    font-size: 8px;
   }
   #iconsDiv {
-    margin-top: -8px;
+    margin-top: -5px;
   }
   #iconsDiv p {
-    font-size: 6px;
+    font-size: 7px;
     margin: 0;
     margin-bottom: 2px;
   }
