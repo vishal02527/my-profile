@@ -103,6 +103,31 @@ document.addEventListener("DOMContentLoaded", function () {
   showImages("life");
 });
 
+// Back to Top button
+let topButton = document.getElementById("topBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topButton.style.display = "block";
+    } else {
+        topButton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document with smooth behavior
+topButton.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
+
+
 //Code for search functionality
 document.addEventListener("DOMContentLoaded", function () {
   const searchForm = document.querySelector(".formNav");
