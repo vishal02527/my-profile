@@ -20,6 +20,11 @@
       href="https://fonts.googleapis.com/css2?&family=Poppins&family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <style>
@@ -78,6 +83,148 @@
     .loaded-home #content-home {
       display: block;
       opacity: 1;
+    }
+
+    .swiper {
+      width: 100% !important;
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 80vh;
+    }
+
+    .swiper-wrapper {
+      width: 100%;
+      height: 30em;
+      display: flex;
+      align-items: center;
+    }
+
+    .card {
+      position: relative;
+      background-color: #fff;
+      border-radius: 20px;
+      height: 500px;
+      width: 320px;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      margin: 0 2.2em;
+      transition: all 3s;
+      transform: scale(1.02);
+    }
+    .card .card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      z-index: 100;
+    }
+
+    .swiper-slide:not(.swiper-slide-active) {
+      filter: blur(1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transform: scale(0.98);
+    }
+
+    div .card .image {
+      height: 140px;
+      width: 140px;
+      border-radius: 50%;
+      padding: 3px;
+      background: #fff;
+      box-shadow: 0px -1px 4px 2px rgba(0, 0, 0, 0.25);
+      position: absolute;
+      top: 13%;
+    }
+    div .card .image img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+    div .card .boxes {
+      position: absolute;
+      width: 100%;
+      height: 35%;
+      border-radius: 20px 20px 0 0;
+    }
+    .box1 {
+      background: linear-gradient(
+        106.32deg,
+        #f3a60f 14.23%,
+        rgba(255, 25, 25, 0) 139.97%
+      );
+    }
+    .box2 {
+      background: linear-gradient(
+        106.32deg,
+        #00c2ff 14.23%,
+        rgba(255, 25, 25, 0) 139.97%
+      );
+    }
+    .box3 {
+      background: linear-gradient(
+        106.32deg,
+        #f30fdd 14.23%,
+        rgba(255, 25, 25, 0) 139.97%
+      );
+    }
+    .box4 {
+      background: linear-gradient(
+        106.32deg,
+        #009688 14.23%,
+        rgba(255, 25, 25, 0) 139.97%
+      );
+    }
+
+    .box5 {
+      background: linear-gradient(
+        106.32deg,
+        rgba(186, 186, 15, 0.66) 14.23%,
+        rgba(255, 25, 25, 0) 139.97%
+      );
+    }
+    .card .name {
+      margin-top: 210px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #222 !important;
+    }
+
+    .card .timeline {
+      position: absolute;
+      top: 13.6%;
+      right: -23.6%;
+      transform: rotate(-90deg);
+      width: 177px;
+      height: 30px;
+      background-image: linear-gradient(
+        to right,
+        #603813 0%,
+        #9d6939 51%,
+        #603813 100%
+      );
+      color: #fff;
+      font-size: 10px;
+      font-weight: 500;
+      border-bottom-right-radius: 20px;
+    }
+
+    .card .timeline p {
+      text-align: center;
+      margin-top: 7px;
+      margin-right: -2px;
+    }
+
+    div .card .about {
+      display: flex;
+      text-align: center;
+      color: #444;
+      font-size: 15px;
+      margin-top: 25px;
+      margin-bottom: 5px;
     }
   </style>
   <body>
@@ -471,103 +618,146 @@
       </div>
       <section>
         <h1>My Journey of Computer Science</h1>
-        <div id="journey-of-cs-section">
-          <div class="timeline">
-            <div class="timeline-item">
-              <h3>Semester 1</h3>
-              <p class="timeline-content">
-                Embarking on my computer science journey, the 1st semester was a
-                foundation-building experience. I delved into the world of
-                programming using C, explored computer architecture, tackled the
-                intricacies of discrete mathematics, and got hands-on with
-                digital electronics.
-              </p>
-              <div class="tooltip">
-                <p>
-                  <i class="fa-regular fa-calendar-days"></i> Sep 16, 2022 -
-                  <i class="fa-regular fa-calendar-days"></i> Dec 15, 2022
-                </p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card">
+              <div class="box1 boxes"></div>
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="./images/education-image.jpg"
+                    alt="education-image"
+                  />
+                </div>
+                <div class="timeline">
+                  <p>
+                    <i class="fa-regular fa-calendar-days"></i> Sep 16, 2022 -
+                    <i class="fa-regular fa-calendar-days"></i> Dec 15, 2022
+                  </p>
+                </div>
+                <div class="name">Semester 1</div>
+                <div class="about">
+                  <p>
+                    Embarking on my computer science journey, the 1st semester
+                    was a foundation-building experience. I delved into the
+                    world of programming using C, explored computer
+                    architecture, tackled the intricacies of discrete
+                    mathematics, and got hands-on with digital electronics.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div class="timeline-item">
-              <h3>Semester 2</h3>
-              <p class="timeline-content">
-                Moving into the 2nd semester, my understanding deepened. I
-                explored the intricacies of operating systems, dove into the
-                world of database management systems, mastered numerical
-                methods, and embraced object-oriented programming with C++.
-              </p>
-              <div class="tooltip">
-                <p>
-                  <i class="fa-regular fa-calendar-days"></i> Jan 12, 2023 -
-                  <i class="fa-regular fa-calendar-days"></i> May 27, 2023
-                </p>
+            <div class="swiper-slide card">
+              <div class="box2 boxes"></div>
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="./images/education-image.jpg"
+                    alt="education-image"
+                  />
+                </div>
+                <div class="timeline">
+                  <p>
+                    <i class="fa-regular fa-calendar-days"></i> Jan 12, 2023 -
+                    <i class="fa-regular fa-calendar-days"></i> May 27, 2023
+                  </p>
+                </div>
+                <div class="name">Semester 2</div>
+                <div class="about">
+                  <p>
+                    Moving into the 2nd semester, my understanding deepened. I
+                    explored the intricacies of operating systems, dove into the
+                    world of database management systems, mastered numerical
+                    methods, and embraced object-oriented programming with C++
+                    with the purpose of enhancing my skills.
+                  </p>
+                </div>
               </div>
             </div>
-
-            <div class="timeline-item">
-              <h3>Semester 3</h3>
-              <p class="timeline-content">
-                Entering the 3rd semester, my journey evolved into the realm of
-                connectivity and software engineering. I delved into computer
-                networks, mastered software engineering principles, honed my
-                skills in data structures using C, and immersed myself in system
-                analysis and design.
-              </p>
-              <div class="tooltip">
-                <p>
-                  <i class="fa-regular fa-calendar-days"></i> Aug 7, 2023 -
-                  <i class="fa-regular fa-calendar-days"></i> Dec 22, 2023
-                </p>
+            <div class="swiper-slide card">
+              <div class="box3 boxes"></div>
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="./images/education-image.jpg"
+                    alt="education-image"
+                  />
+                </div>
+                <div class="timeline">
+                  <p>
+                    <i class="fa-regular fa-calendar-days"></i> Aug 7, 2023 -
+                    <i class="fa-regular fa-calendar-days"></i> Dec 22, 2023
+                  </p>
+                </div>
+                <div class="name">Semester 3</div>
+                <div class="about">
+                  <p>
+                    Entering the 3rd semester, my journey evolved into the realm
+                    of connectivity and software engineering. I delved into
+                    computer networks, mastered software engineering principles,
+                    honed my skills in data structures using C, and immersed
+                    myself in system analysis and design.
+                  </p>
+                </div>
               </div>
             </div>
-
-            <div class="timeline-item">
-              <h3>Semester 4</h3>
-              <p class="timeline-content">
-                Currently navigating the 4th semester, I'm exploring advanced
-                concepts. I'm delving into object-oriented programming with
-                Java, venturing into the fascinating world of computer graphics,
-                studying the techniques of Operation Research, and exploring the
-                dynamic field of E-commerce & ERP.
-              </p>
-              <div class="tooltip">
-                <p>
-                  <i class="fa-regular fa-calendar-days"></i> Feb 12, 2024 -
-                  <i class="fa-regular fa-calendar-days"></i> May 28, 2024
-                </p>
+            <div class="swiper-slide card">
+              <div class="box4 boxes"></div>
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="./images/education-image.jpg"
+                    alt="education-image"
+                  />
+                </div>
+                <div class="timeline">
+                  <p>
+                    <i class="fa-regular fa-calendar-days"></i> Feb 12, 2024 -
+                    <i class="fa-regular fa-calendar-days"></i> May 28, 2024
+                  </p>
+                </div>
+                <div class="name">Semester 4</div>
+                <div class="about">
+                  <p>
+                    In the 4th semester, I embarked on a journey through
+                    advanced concepts, immersing myself in the intricate world
+                    of object-oriented programming with Java. I ventured into
+                    the captivating realm of computer graphics and studied the
+                    techniques of Operation Research and E-commerce & ERP."
+                  </p>
+                </div>
               </div>
             </div>
-
-            <div class="timeline-item">
-              <h3>Full Stack MERN Development</h3>
-              <p class="timeline-content">
-                During the exhilarating journey of my 3rd semester, I undertook
-                a transformative challenge by enrolling in the 'Full Stack Web
-                Development (MERN)' course with Edyoda. This immersive
-                experience not only deepened my understanding of modern web
-                development but also equipped me with the skills to build
-                dynamic and robust applications. From mastering the MERN
-                (MongoDB, Express.js, React.js, Node.js) stack to creating
-                interactive user interfaces, the course provided hands-on
-                experiences that were both enriching and rewarding.
-                Collaborating on real-world projects and engaging with
-                industry-standard tools amplified my confidence as a developer.
-                Completing this course was a pivotal milestone that broadened my
-                horizons and laid a solid foundation for my journey towards
-                becoming a proficient full-stack web developer.
-              </p>
-              <div class="tooltip">
-                <p>
-                  <i class="fa-regular fa-calendar-days"></i> May 23, 2023 -
-                  <i class="fa-regular fa-calendar-days"></i> Nov 10, 2023
-                </p>
+            <div class="swiper-slide card">
+              <div class="box5 boxes"></div>
+              <div class="card-content">
+                <div class="image">
+                  <img
+                    src="./images/education-image.jpg"
+                    alt="education-image"
+                  />
+                </div>
+                <div class="timeline">
+                  <p>
+                    <i class="fa-regular fa-calendar-days"></i> May 23, 2023 -
+                    <i class="fa-regular fa-calendar-days"></i> Nov 10, 2023
+                  </p>
+                </div>
+                <div class="name">MERN Development</div>
+                <div class="about">
+                  <p>
+                    During the exhilarating journey of my 3rd semester, I
+                    enrolled myself in the Full Stack Web Development (MERN)
+                    course at Edyoda. From mastering the MERN stack to creating
+                    interactive user interfaces, the course provided hands-on
+                    experiences that were both enriching and rewarding.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
       </section>
       <footer>
         <div class="leftSide">
@@ -604,6 +794,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       window.addEventListener("load", () => {
         const loaderWrapperHome = document.getElementById(
@@ -617,9 +809,33 @@
           contentHome.style.display = "block";
           setTimeout(() => {
             contentHome.classList.add("loaded-home");
-            contentHome.style.opacity = "1"; // Ensure content is fully visible
-          }, 100); // Slight delay to trigger the CSS transition
-        }, 3000); // Adjust the timeout duration as needed
+            contentHome.style.opacity = "1";
+          }, 100);
+        }, 3000);
+      });
+
+      // Initialize Swiper
+
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true, // Allows the slider to loop back to the first slide
       });
     </script>
   </body>

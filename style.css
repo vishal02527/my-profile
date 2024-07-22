@@ -519,6 +519,9 @@ footer ul li a i {
     font-size: 20px;
     font-weight: 600;
   }
+  section h1 {
+    font-size: 20px !important;
+  }
   .home_info3_images {
     width: 250px;
     height: 200px;
@@ -806,70 +809,6 @@ section h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.timeline {
-  position: relative;
-  margin-top: 20px;
-  padding: 20px 0;
-}
-
-.timeline-item {
-  position: relative;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  transition: transform 0.3s ease-in-out;
-  border: 1px solid #ddd;
-}
-
-.timeline-item:hover {
-  transform: translateY(-5px);
-  margin-bottom: 35px;
-}
-
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
-  background-color: #ffa500;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  z-index: 1;
-}
-
-.timeline-item h3 {
-  color: #b22222;
-}
-
-.timeline-content {
-  margin-top: 10px;
-}
-
-.tooltip {
-  position: absolute;
-  bottom: -20px;
-  left: 40%;
-  background: linear-gradient(to top, #f3a238, #f5c586);
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  width: 250px;
-  height: 45px;
-  padding: 10px 0;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  pointer-events: none;
-}
-
-.timeline-item:hover .tooltip {
-  opacity: 1;
-}
-
 @media (max-width: 768px) {
   .skill-card {
     width: 85%;
@@ -943,30 +882,6 @@ section h1 {
 
   #journey-of-cs-section {
     padding: 5px 10px;
-  }
-
-  .timeline {
-    padding: 10px 0;
-  }
-
-  .timeline-item {
-    margin-bottom: 35px;
-    padding: 15px;
-  }
-
-  .timeline-content {
-    margin-top: 20px;
-    font-size: 14px;
-  }
-
-  .tooltip {
-    left: 12%;
-    font-size: 14px;
-    width: 220px;
-    height: 40px;
-    padding: 10px 0;
-    opacity: 1;
-    z-index: 10;
   }
 }
 
