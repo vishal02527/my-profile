@@ -24,8 +24,11 @@
       body {
         margin: 0;
         font-family: Arial;
-        background-image: radial-gradient(rgb(68, 76, 247) 0.5px, rgb(237, 237, 248) 0.5px);
-    background-size: 10px 10px;
+        background-image: radial-gradient(
+          rgb(68, 76, 247) 0.5px,
+          rgb(237, 237, 248) 0.5px
+        );
+        background-size: 10px 10px;
         overflow-x: hidden;
       }
 
@@ -49,6 +52,7 @@
         width: 100%;
         height: 350px;
         border: 2px solid #ddd;
+        cursor: pointer;
         border-radius: 10px;
         transition: transform 0.3s, box-shadow 0.3s;
       }
@@ -85,7 +89,7 @@
           grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
           padding: 0 20px;
         }
-        .painting{
+        .painting {
           height: 200px;
         }
       }
@@ -102,42 +106,6 @@
           height: 200px;
         }
       }
-
-      /*.row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-        justify-content: center;
-      }
-
-      /* Create four equal columns that sits next to each other 
-      .column {
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 4px;
-      }
-
-      .column img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-      }
-
-       Responsive layout - makes a two column-layout instead of four columns 
-      @media screen and (max-width: 800px) {
-        .column {
-          flex: 50%;
-          max-width: 50%;
-        }
-      }
-
-       Responsive layout - makes the two columns stack on top of each other instead of next to each other 
-      @media screen and (max-width: 600px) {
-        .column {
-          flex: 100%;
-          max-width: 90%;
-        }
-      }*/
     </style>
   </head>
   <body>
@@ -269,22 +237,58 @@
           </p>
         </div>
 
-        <!-- Photo Grid -->
+        <!-- Painting Grid -->
         <div class="painting-grid">
-          
-            <img src="./images/painting-1.png" class="painting" onclick="openLightbox(this)" />
-            <img src="./images/painting-3.png" class="painting" onclick="openLightbox(this)" />
-            <img src="./images/painting-5.png" class="painting" onclick="openLightbox(this)" />
-            <img src="./images/painting-7.png" class="painting" onclick="openLightbox(this)" />
-            <img src="./images/painting-10.png" class="painting" onclick="openLightbox(this)" />
-          
-          
-            <img src="./images/painting-2.png" class="painting" onclick="openLightbox(this)" />
-            <img src="./images/painting-4.png" class="painting" onclick="openLightbox(this)" />
-            <img src="./images/painting-6.png" class="painting" onclick="openLightbox(this)" />
-            <img src="./images/painting-8.png" class="painting" onclick="openLightbox(this)" />
-            <img src="./images/painting-9.png" class="painting" onclick="openLightbox(this)" />
-          
+          <img
+            src="./images/painting-1.png"
+            class="painting"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/painting-3.png"
+            class="painting"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/painting-5.png"
+            class="painting"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/painting-7.png"
+            class="painting"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/painting-10.png"
+            class="painting"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/painting-2.png"
+            class="painting"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/painting-4.png"
+            class="painting"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/painting-6.png"
+            class="painting"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/painting-8.png"
+            class="painting"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/painting-9.png"
+            class="painting"
+            onclick="openLightbox(this)"
+          />
         </div>
 
         <!-- Lightbox -->
@@ -292,7 +296,9 @@
           <img id="lightbox-img" class="lightbox-img" />
         </div>
       </main>
-      <button id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+      <button id="topBtn" title="Go to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
       <footer>
         <div class="leftSide">
           <a href="/">

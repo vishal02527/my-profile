@@ -44,6 +44,17 @@
         font-size: 40px;
       }
 
+      .image-container {
+        perspective: 1000px; /* Adds depth perspective */
+      }
+
+      .rotatingImage {
+        display: block;
+        max-width: 100%;
+        transition: transform 0.1s ease-out;
+        transform-style: preserve-3d;
+      }
+
       /* Education Background Section */
       #educationSection {
         margin: 150px auto 100px;
@@ -299,6 +310,10 @@
           padding: 10px 40px;
           margin-left: 25px;
         }
+
+        .image-container img {
+          margin-left: 20px;
+        }
       }
     </style>
   </head>
@@ -469,14 +484,16 @@
         <div class="container px-4 py-5">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-              <img
-                src="https://media.istockphoto.com/id/1316676124/vector/freelance-programming-concept-with-character-companies-with-professional-interaction.jpg?s=612x612&w=0&k=20&c=0yElIF8oqTvr7JMyRwfpBCHsxmtQiU5DfYuy00Zbis0="
-                class="d-block mx-lg-auto img-fluid"
-                alt="Bootstrap Themes"
-                width="700"
-                height="500"
-                loading="lazy"
-              />
+              <div class="image-container">
+                <img
+                  src="https://media.istockphoto.com/id/1316676124/vector/freelance-programming-concept-with-character-companies-with-professional-interaction.jpg?s=612x612&w=0&k=20&c=0yElIF8oqTvr7JMyRwfpBCHsxmtQiU5DfYuy00Zbis0="
+                  class="d-block mx-lg-auto img-fluid rotatingImage"
+                  alt="Bootstrap Themes"
+                  width="450"
+                  height="400"
+                  loading="lazy"
+                />
+              </div>
             </div>
             <div class="col-lg-6 heroDiv">
               <h1 class="display-5 text-body-emphasis lh-1 mb-3" id="mainHead1">
@@ -494,14 +511,16 @@
         <div class="container px-4 py-5" style="margin-top: -200px">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
-              <img
-                src="https://media.istockphoto.com/id/1096969570/vector/isometric-illustration-with-a-laptop-men-and-women-working-on-web-design.jpg?s=612x612&w=0&k=20&c=a3VvtOOYjuI0Sux_WmMEg_WHp6Bkgxh3HfY7BK6LIzA="
-                class="d-block mx-lg-auto img-fluid"
-                alt="Bootstrap Themes"
-                width="450"
-                height="400"
-                loading="lazy"
-              />
+              <div class="image-container">
+                <img
+                  src="https://media.istockphoto.com/id/1096969570/vector/isometric-illustration-with-a-laptop-men-and-women-working-on-web-design.jpg?s=612x612&w=0&k=20&c=a3VvtOOYjuI0Sux_WmMEg_WHp6Bkgxh3HfY7BK6LIzA="
+                  class="d-block mx-lg-auto img-fluid rotatingImage"
+                  alt="Bootstrap Themes"
+                  width="450"
+                  height="400"
+                  loading="lazy"
+                />
+              </div>
             </div>
             <div class="col-lg-6 heroDiv">
               <h1 class="display-5 text-body-emphasis lh-1 mb-3" id="mainHead2">
@@ -665,7 +684,9 @@
             >
           </div>
         </div>
-        <button id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+        <button id="topBtn" title="Go to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
       </main>
       <footer>
         <div class="leftSide">
@@ -702,5 +723,31 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script>
+      // Select all containers that have images to be rotated
+      const containers = document.querySelectorAll(".image-container");
+
+      containers.forEach((container) => {
+        container.addEventListener("mousemove", function (e) {
+          const image = container.querySelector(".rotatingImage");
+          const rect = container.getBoundingClientRect();
+          const mouseX = e.clientX - rect.left;
+          const mouseY = e.clientY - rect.top;
+
+          // Calculate the rotation angles
+          const rotateY = (mouseX / rect.width - 0.5) * 30; // Adjust multiplier to change sensitivity
+          const rotateX = (mouseY / rect.height - 0.5) * -30;
+
+          // Apply rotation to the image
+          image.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        // Reset rotation when the mouse leaves the container
+        container.addEventListener("mouseleave", function () {
+          const image = container.querySelector(".rotatingImage");
+          image.style.transform = `rotateX(0deg) rotateY(0deg)`;
+        });
+      });
+    </script>
   </body>
 </html>
