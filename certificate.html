@@ -23,7 +23,8 @@
       body {
         margin: 0;
         font-family: Arial;
-        background-color: #f9ecde;
+        background-image: radial-gradient(rgb(68, 76, 247) 0.5px, rgb(237, 237, 248) 0.5px);
+    background-size: 10px 10px;
         overflow-x: hidden;
       }
 
@@ -36,39 +37,105 @@
         color: #0083ab;
       }
 
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-        justify-content: center;
+      .button-container {
+        text-align: center;
+        margin: 20px;
       }
 
-      /* Create four equal columns that sits next to each other */
-      .column {
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 4px;
+      .filter-btn {
+        background-color: #f1f1f1;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
       }
 
-      .column img {
-        margin-top: 8px;
-        vertical-align: middle;
+      .filter-btn.active {
+        background-image: linear-gradient(
+          to right,
+          #360033 0%,
+          #0b8793 100%,
+          #360033 0%
+        );
+        color: white;
+      }
+
+      .filter-btn:hover {
+        background-color: #dbd9d9;
+      }
+
+      .certificate-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 10px;
+        padding: 10px 60px 0;
+      }
+
+      .certificate {
         width: 100%;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
       }
 
-      /* Responsive layout - makes a two column-layout instead of four columns */
-      @media screen and (max-width: 800px) {
-        .column {
-          flex: 50%;
-          max-width: 50%;
+      .certificate:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Lightbox styling */
+      .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .lightbox-img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s;
+      }
+
+      @media (max-width: 768px) {
+        .filter-btn {
+          font-size: 14px;
+          padding: 8px 16px;
+          margin: 0 2px;
+        }
+
+        .certificate-grid {
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          padding: 0 20px;
         }
       }
 
-      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 600px) {
-        .column {
-          flex: 100%;
-          max-width: 90%;
+      @media (max-width: 480px) {
+        .filter-btn {
+          font-size: 12px;
+          padding: 6px 12px;
+        }
+
+        .certificate-grid {
+          grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+          gap: 5px;
+          padding: 0 20px;
+        }
+
+        .certificate {
+          border-width: 1px;
         }
       }
     </style>
@@ -201,32 +268,136 @@
             knowledge.
           </p>
         </div>
-        <div class="row">
-          <div class="column">
-            <img src="./images/certificate12.png" style="width: 100%" />
-            <img src="./images/certificate13.png" style="width: 100%" />
-            <img src="./images/certificate3.jpg" style="width: 100%" />
-            <img src="./images/certificate10.jpg" style="width: 100%" />
-            <img src="./images/certificate8.png" style="width: 100%" />
-            <img src="./images/certificate2.png" style="width: 100%" />
-            <img src="./images/certificate7.png" style="width: 100%" />
-            <img src="./images/certificate16.png" style="width: 100%" />
-            <img src="./images/certificate19.png" style="width: 100%" />
-          </div>
-          <div class="column">
-            <img src="./images/certificate5.jpg" style="width: 100%" />
-            <img src="./images/certificate4.png" style="width: 100%" />
-            <img src="./images/certificate14.png" style="width: 100%" />
-            <img src="./images/certificate11.png" style="width: 100%" />
-            <img src="./images/certificate1.jpg" style="width: 100%" />
-            <img src="./images/certificate9.jpg" style="width: 100%" />
-            <img src="./images/certificate6.jpg" style="width: 100%" />
-            <img src="./images/certificate15.png" style="width: 100%" />
-            <img src="./images/certificate17.png" style="width: 100%" />
-            <img src="./images/certificate18.jpg" style="width: 100%" />
-          </div>
+
+        <div class="button-container">
+          <button class="filter-btn active" onclick="filterCertificates('all')">
+            All
+          </button>
+          <button class="filter-btn" onclick="filterCertificates('technical')">
+            Technical
+          </button>
+          <button
+            class="filter-btn"
+            onclick="filterCertificates('non-technical')"
+          >
+            Non-Technical
+          </button>
+          <button class="filter-btn" onclick="filterCertificates('other')">
+            Other
+          </button>
         </div>
-        <button id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+        <div class="certificate-grid">
+          <img
+            src="./images/reactjs-certificate-1.png"
+            class="certificate technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/timeManagement-certificate-3.jpg"
+            class="certificate non-technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/javaQuizWinner-certificate-5.jpg"
+            class="certificate technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/javaInternship-certificate-7.png"
+            class="certificate technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/nodejs-certificate-12.png"
+            class="certificate technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/spokenEnglish-certificate-14.jpg"
+            class="certificate non-technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/chatGPT-certificate-16.png"
+            class="certificate other"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/personalityDevelopment-certificate-18.jpg"
+            class="certificate non-technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/gitGithub-certificate-20.jpg"
+            class="certificate technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/communication-certificate-2.png"
+            class="certificate non-technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/gssoc24-certificate-4.png"
+            class="certificate other"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/projectManagement-certificate-6.png"
+            class="certificate non-technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/webDevFundamental-certificate-8.png"
+            class="certificate technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/decisionMaking-certificate-10.jpg"
+            class="certificate non-technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/webInternship-certificate-11.png"
+            class="certificate technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/interviewSkills-certificate-13.png"
+            class="certificate non-technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/cppInternship-certificate-15.png"
+            class="certificate technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/nextjs-certificate-17.jpg"
+            class="certificate technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/codewars-certificate-19.png"
+            class="certificate technical"
+            onclick="openLightbox(this)"
+          />
+          <img
+            src="./images/collegeTopper-certificate-9.png"
+            class="certificate other"
+            onclick="openLightbox(this)"
+          />
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+          <img id="lightbox-img" class="lightbox-img" />
+        </div>
+
+        <button id="topBtn" title="Go to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
       </main>
       <footer>
         <div class="leftSide">
@@ -263,5 +434,44 @@
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script>
+      function filterCertificates(category) {
+        const certificates = document.querySelectorAll(".certificate");
+
+        certificates.forEach((cert) => {
+          if (category === "all") {
+            cert.style.display = "block";
+          } else {
+            cert.classList.contains(category)
+              ? (cert.style.display = "block")
+              : (cert.style.display = "none");
+          }
+        });
+
+        const buttons = document.querySelectorAll(".filter-btn");
+        buttons.forEach((button) => {
+          button.classList.remove("active");
+        });
+
+        document
+          .querySelector(
+            `.filter-btn[onclick="filterCertificates('${category}')"]`
+          )
+          .classList.add("active");
+      }
+
+      function openLightbox(imgElement) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+        lightboxImg.src = imgElement.src;
+        lightbox.style.display = "flex";
+      }
+
+      function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        lightbox.style.display = "none";
+      }
+    </script>
   </body>
 </html>
