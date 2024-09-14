@@ -357,7 +357,7 @@
         </div>
         <div class="biodataDiv">
           <div id="myImage">
-            <img src="./images/my-image-index.jpg" alt="Profile image" />
+            <img src="./images/my-image-index2.png" alt="Profile image" />
           </div>
           <div id="biodata">
             <p id="paraIndex1">HELLO EVERYBODY, I AM</p>
@@ -748,6 +748,7 @@
           <i class="fa-solid fa-arrow-up"></i>
         </button>
       </section>
+
       <div id="life-interest-section">
         <div id="life-interest-div">
           <div id="life" onclick="showImages('life')">
@@ -761,6 +762,43 @@
           <div id="gallery"></div>
         </div>
       </div>
+
+      <section>
+        <h1>Three Tenets of My Life</h1>
+        <div class="flipcard-container">
+          <div class="flip-card" onclick="flipCard(this)">
+            <div class="card-face card-back">
+              <div class="flip-circle">1</div>
+            </div>
+            <div class="card-face card-front">
+              <h2>Be Kind</h2>
+              <p>Small acts of kindness can make a big difference.</p>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="flip-card" onclick="flipCard(this)">
+            <div class="card-face card-back">
+              <div class="flip-circle">2</div>
+            </div>
+            <div class="card-face card-front">
+              <h2>Practice Gratitude</h2>
+              <p>Appreciate what you have and find joy in the present.</p>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="flip-card" onclick="flipCard(this)">
+            <div class="card-face card-back">
+              <div class="flip-circle">3</div>
+            </div>
+            <div class="card-face card-front">
+              <h2>Embrace Change</h2>
+              <p>Adapt and evolve with life’s twists and turns.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer>
         <div class="leftSide">
           <a href="/">
@@ -839,6 +877,11 @@
         },
         loop: true, // Allows the slider to loop back to the first slide
       });
+
+      //Flipcard code
+      function flipCard(card) {
+        card.classList.toggle("flipped");
+      }
     </script>
   </body>
 </html>
