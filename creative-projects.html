@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ReactJs projects</title>
+    <title>Creative projects</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,13 +14,143 @@
       src="https://kit.fontawesome.com/d74f12bccc.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?&family=Poppins&family=Raleway&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 850px;
+        margin: 2rem auto !important;
+        padding: 0 20px;
+      }
+
+      .project-section {
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .project-section h2 {
+        font-family: "Dancing Script", cursive;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 800;
+        font-size: 40px;
+        color: #c8a105;
+      }
+
+      .project-details p {
+        line-height: 1.6;
+        font-family: "Poppins", cursive;
+        font-size: 16px;
+        color: #777;
+        margin-bottom: 30px;
+      }
+
+      #downloadBtn-Div {
+          margin: 20px 0px 10px 280px;
+        }
+
+      .download-button {
+        margin-left: 5px;
+        background-color: #c8a105;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .related-links {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .related-links ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+
+      .related-links ul li {
+        margin-bottom: 10px;
+      }
+
+      .related-links ul li a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .related-links ul li a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          max-width: 340px;
+          padding: 0 5px;
+        }
+
+        .project-section {
+          padding: 15px;
+        }
+
+        .project-section h2 {
+          margin-bottom: 30px;
+          font-size: 26px;
+        }
+
+        .project-details p {
+          line-height: 1.4;
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+
+        #downloadBtn-Div {
+          margin: 10px 0px 10px 80px;
+        }
+
+        .download-button {
+          padding: 8px 15px;
+          font-size: 14px;
+        }
+
+        .related-links {
+          padding: 20px 20px 10px;
+          margin-top: 20px;
+        }
+
+        .related-links h3 {
+          font-size: 20px;
+        }
+
+        .related-links ul li {
+          margin-bottom: 5px;
+          font-size: 14px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="loader-wrapper">
       <div id="loader"></div>
     </div>
-    <div id="content">
+    <main class="homeMain">
       <nav
         class="navbar navbar-expand-lg bg-body-tertiary"
         style="position: sticky; top: 0; z-index: 100"
@@ -72,7 +202,7 @@
                   <li>
                     <a
                       class="dropdown-item"
-                      href="https://github.com/vishal02527/CPP-Projects"
+                      href="https://github.com/vishal02527/CPP-Projects-2023"
                       target="_blank"
                       >C++ projects</a
                     >
@@ -141,141 +271,66 @@
           </div>
         </div>
       </nav>
-
-      <main style="margin: 50px auto">
-        <h1 class="proHead">ReactJs projects</h1>
-
-        <div class="cardContainer">
-          <div class="rowCard">
-            <div class="projectCards">
-              <img
-                src=".//images/pro-react1.png"
-                width="250"
-                height="200"
-                class="cardimage"
-              />
-              <h2 class="cardtitle">Grid design</h2>
-              <span class="name">Vishal Kumar</span>
-              <span>| 10 Sep 2023</span>
-              <p class="cardpara">
-                This visionary project boasts an elegant grid layout featuring a
-                sleek top navbar, nine captivating cards, and a meticulously
-                crafted footer.
-              </p>
-              <a href="https://grid-design-react.vercel.app/" target="_blank"
-                ><button class="pro-btn"><span>View Project</span></button></a
-              >
-            </div>
-            <div class="projectCards">
-              <img
-                src=".//images/pro-react2.png"
-                width="250"
-                height="200"
-                class="cardimage"
-              />
-              <h2 class="cardtitle">Youtube inspired gallery</h2>
-              <span class="name">Vishal Kumar</span>
-              <span>| 14 Sep 2023</span>
-              <p class="cardpara">
-                This is based on video cards, showcasing compelling thumbnails,
-                captivating titles, channel names, likes and reviews for each
-                video.
-              </p>
-              <a
-                href="https://you-tube-gallery-by-vishal-kumar.vercel.app/"
-                target="_blank"
-                ><button class="pro-btn"><span>View Project</span></button></a
-              >
-            </div>
-            <div class="projectCards">
-              <img
-                src=".//images/pro-react3.png"
-                width="250"
-                height="200"
-                class="cardimage"
-              />
-              <h2 class="cardtitle">Admin panel</h2>
-              <span class="name">Vishal Kumar</span>
-              <span>| 29 Sep 2023</span>
-              <p class="cardpara">
-                Admin panel is a majour project made with mobile responsive
-                design. It consists of Dynamic graph charts and information of
-                products and users.
-              </p>
-              <a
-                href="https://react-admin-panel-by-vishal-kumar.netlify.app/"
-                target="_blank"
-                ><button class="pro-btn"><span>View Project</span></button></a
-              >
-            </div>
+      <section class="container">
+        <div class="project-section">
+          <h2>Magazine: Ujjwal gagan</h2>
+          <div class="project-details">
+            <p>
+              In my role as the magazine director, I had the privilege to
+              conceptualize and design 'Ujjwal Gagan', the official college
+              magazine of Gagan College of Management and Technology. As a CS
+              student, honing my design skills has been invaluable, allowing me
+              to merge technology with creativity to produce innovative and
+              visually compelling solutions. This project enabled me to combine
+              my passion for design with the essence of academic culture,
+              resulting in a visually captivating and informative publication. I
+              focused on creating a cohesive layout that seamlessly integrated
+              engaging content, vibrant imagery, and user-friendly navigation.
+              Through meticulous attention to detail and a deep understanding of
+              the college's brand identity, I successfully crafted a magazine
+              that not only showcases the achievements and insights of our
+              academic community but also serves as a timeless keepsake for
+              students, faculty, and alumni. 'Ujjwal Gagan' stands as a
+              testament to my commitment to excellence in design and my ability
+              to bring creative visions to life in the realm of print media.
+            </p>
           </div>
-          <div class="rowCard">
-            <div class="projectCards">
-              <img
-                src=".//images/pro-react4.png"
-                width="250"
-                height="200"
-                class="cardimage"
-              />
-              <h2 class="cardtitle">Movie search engine</h2>
-              <span class="name">Vishal Kumar</span>
-              <span>| 16 Sep 2023</span>
-              <p class="cardpara">
-                This project contains some movies in a card format, with their
-                thumbnail and title(on hover). We can serach those movies by
-                their title name.
-              </p>
-              <a
-                href="https://movie-search-web-by-vishal-kumar.vercel.app/"
-                target="_blank"
-                ><button class="pro-btn"><span>View Project</span></button></a
-              >
-            </div>
-            <div class="projectCards">
-              <img
-                src=".//images/pro-react5.png"
-                width="250"
-                height="200"
-                class="cardimage"
-              />
-              <h2 class="cardtitle">Vishal digital university</h2>
-              <span class="name">Vishal Kumar</span>
-              <span>| 01 Nov 2023</span>
-              <p class="cardpara">
-                This is best project that I've ever made in react. It's
-                responsive and is for university purposes. Many attractive
-                functionalities are used in this project.
-              </p>
-              <a
-                href="https://vishal-digital-university.vercel.app/"
-                target="_blank"
-                ><button class="pro-btn"><span>View Project</span></button></a
-              >
-            </div>
-            <div class="projectCards">
-              <img
-                src=".//images/pro-react6.png"
-                width="250"
-                height="200"
-                class="cardimage"
-              />
-              <h2 class="cardtitle">Kafene web app</h2>
-              <span class="name">Vishal Kumar</span>
-              <span>| 18 Nov 2023</span>
-              <p class="cardpara">
-                This is a store which contains the data of products. Checkbox
-                filter functionality is implemented to filter the products on
-                the basis of some specific criteria.
-              </p>
-              <a href="https://kafene-store.netlify.app/" target="_blank"
-                ><button class="pro-btn"><span>View Project</span></button></a
-              >
-            </div>
+          <iframe
+            src="https://publuu.com/flip-book/681044/1515417/page/24?embed"
+            width="100%"
+            height="420"
+            scrolling="no"
+            frameborder="0"
+            allow="clipboard-write; autoplay; fullscreen"
+            class="publuuflip"
+          ></iframe>
+          <div id="downloadBtn-Div">
+            <a href="#" download=""
+              ><button class="download-button">Download PDF</button></a
+            >
           </div>
         </div>
-        <button id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
-      </main>
-
+        <aside class="related-links">
+          <h3>Explore more projects</h3>
+          <ul>
+            <li><a href="./html-css-projects.html">HTML/CSS Projects</a></li>
+            <li><a href="./reactjs-projects.html">Reactjs Projects</a></li>
+            <li>
+              <a href="./javascript-projects.html">Javascript Projects</a>
+            </li>
+            <li>
+              <a href="https://github.com/vishal02527/CPP-Projects"
+                >C/C++ Projects</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/vishal02527/Java-Projects"
+                >Java projects</a
+              >
+            </li>
+          </ul>
+        </aside>
+      </section>
       <footer>
         <div class="leftSide">
           <a href="/">
@@ -304,7 +359,7 @@
           </li>
         </ul>
       </footer>
-    </div>
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

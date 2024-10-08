@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
       content.classList.add("loaded");
       content.style.opacity = "1"; // Ensure content is fully visible
     }, 100); // Slight delay to trigger the CSS transition
-  }, 3000);
+  }, 2000);
 });
 
 //Code for dynamic text generation
