@@ -145,7 +145,6 @@ document.addEventListener("DOMContentLoaded", function () {
         skills: "./index.html",
         gallery: "./gallery.html",
         about: "./about.html",
-        resume: "./about.html",
         contact: "./contact.html",
         "html projects": "./html-css-projects.html",
         "css projects": "./html-css-projects.html",
